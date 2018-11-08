@@ -1,0 +1,15 @@
+source 'https://mirror.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def shared_pods
+    pod 'RxSwift',          '~> 4.0.0'
+    pod 'RxCocoa',          '~> 4.0.0'
+    pod 'SwiftLint'
+end
+
+target 'LLmyApp' do
+	shared_pods
+end
