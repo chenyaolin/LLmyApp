@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
-		87AB30DE21940BD000B330EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DD21940BD000B330EA /* ViewController.swift */; };
-		87AB30E121940BD000B330EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30DF21940BD000B330EA /* Main.storyboard */; };
 		87AB30E321940BD100B330EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E221940BD100B330EA /* Assets.xcassets */; };
 		87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E421940BD100B330EA /* LaunchScreen.storyboard */; };
 		87AB30F121940BD100B330EA /* LLmyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30F021940BD100B330EA /* LLmyAppUITests.swift */; };
+		87AB30FF219418A600B330EA /* LLCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30FE219418A600B330EA /* LLCustomTabBar.swift */; };
+		87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB31012194195700B330EA /* NibLoadableProtocol.swift */; };
+		87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB3103219419BE00B330EA /* UIColor+Hex.swift */; };
+		87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AB310521941A5B00B330EA /* LLCustomTabBar.xib */; };
+		87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB310721941AB500B330EA /* LLTabBarViewController.swift */; };
+		87AB310B21941BA000B330EA /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB310A21941BA000B330EA /* Commons.swift */; };
+		87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB310D21941CCA00B330EA /* BaseNavigationController.swift */; };
+		87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB3111219441D000B330EA /* LLMainViewController.swift */; };
+		87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB3113219441DF00B330EA /* LLMainUI.storyboard */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,14 +36,21 @@
 /* Begin PBXFileReference section */
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30DB21940BD000B330EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87AB30DD21940BD000B330EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87AB30E021940BD000B330EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87AB30E221940BD100B330EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87AB30E521940BD100B330EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87AB30E721940BD100B330EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87AB30EC21940BD100B330EA /* LLmyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLmyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30F021940BD100B330EA /* LLmyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLmyAppUITests.swift; sourceTree = "<group>"; };
 		87AB30F221940BD100B330EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AB30FE219418A600B330EA /* LLCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCustomTabBar.swift; sourceTree = "<group>"; };
+		87AB31012194195700B330EA /* NibLoadableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableProtocol.swift; sourceTree = "<group>"; };
+		87AB3103219419BE00B330EA /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		87AB310521941A5B00B330EA /* LLCustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLCustomTabBar.xib; sourceTree = "<group>"; };
+		87AB310721941AB500B330EA /* LLTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTabBarViewController.swift; sourceTree = "<group>"; };
+		87AB310A21941BA000B330EA /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		87AB310D21941CCA00B330EA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		87AB3111219441D000B330EA /* LLMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewController.swift; sourceTree = "<group>"; };
+		87AB3113219441DF00B330EA /* LLMainUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LLMainUI.storyboard; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,12 +107,10 @@
 		87AB30DA21940BD000B330EA /* LLmyApp */ = {
 			isa = PBXGroup;
 			children = (
-				87AB30DB21940BD000B330EA /* AppDelegate.swift */,
-				87AB30DD21940BD000B330EA /* ViewController.swift */,
-				87AB30DF21940BD000B330EA /* Main.storyboard */,
-				87AB30E221940BD100B330EA /* Assets.xcassets */,
-				87AB30E421940BD100B330EA /* LaunchScreen.storyboard */,
-				87AB30E721940BD100B330EA /* Info.plist */,
+				87AB310921941B8000B330EA /* Other(其它) */,
+				87AB31002194191B00B330EA /* Extension(扩展) */,
+				87AB30FC2194181400B330EA /* UI(视图) */,
+				87AB30FB21940D7100B330EA /* Supporting Files */,
 			);
 			path = LLmyApp;
 			sourceTree = "<group>";
@@ -110,6 +122,71 @@
 				87AB30F221940BD100B330EA /* Info.plist */,
 			);
 			path = LLmyAppUITests;
+			sourceTree = "<group>";
+		};
+		87AB30FB21940D7100B330EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87AB30DB21940BD000B330EA /* AppDelegate.swift */,
+				87AB30E721940BD100B330EA /* Info.plist */,
+				87AB30E221940BD100B330EA /* Assets.xcassets */,
+				87AB30E421940BD100B330EA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87AB30FC2194181400B330EA /* UI(视图) */ = {
+			isa = PBXGroup;
+			children = (
+				87AB310C21941CA500B330EA /* Base */,
+				87AB30FD2194181F00B330EA /* Tabbar */,
+				87AB3110219441B700B330EA /* Main(主界面) */,
+			);
+			path = "UI(视图)";
+			sourceTree = "<group>";
+		};
+		87AB30FD2194181F00B330EA /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				87AB310721941AB500B330EA /* LLTabBarViewController.swift */,
+				87AB30FE219418A600B330EA /* LLCustomTabBar.swift */,
+				87AB310521941A5B00B330EA /* LLCustomTabBar.xib */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		87AB31002194191B00B330EA /* Extension(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				87AB31012194195700B330EA /* NibLoadableProtocol.swift */,
+				87AB3103219419BE00B330EA /* UIColor+Hex.swift */,
+			);
+			path = "Extension(扩展)";
+			sourceTree = "<group>";
+		};
+		87AB310921941B8000B330EA /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				87AB310A21941BA000B330EA /* Commons.swift */,
+			);
+			path = "Other(其它)";
+			sourceTree = "<group>";
+		};
+		87AB310C21941CA500B330EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				87AB310D21941CCA00B330EA /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		87AB3110219441B700B330EA /* Main(主界面) */ = {
+			isa = PBXGroup;
+			children = (
+				87AB3111219441D000B330EA /* LLMainViewController.swift */,
+				87AB3113219441DF00B330EA /* LLMainUI.storyboard */,
+			);
+			path = "Main(主界面)";
 			sourceTree = "<group>";
 		};
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
@@ -132,6 +209,7 @@
 				87AB30D521940BD000B330EA /* Frameworks */,
 				87AB30D621940BD000B330EA /* Resources */,
 				0925DD29B95F8F1BA7CB9F3F /* [CP] Embed Pods Frameworks */,
+				87AB310F21941D4E00B330EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -166,6 +244,7 @@
 		87AB30D021940BD000B330EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LL;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = LinChen;
@@ -203,9 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
+				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
 				87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */,
 				87AB30E321940BD100B330EA /* Assets.xcassets in Resources */,
-				87AB30E121940BD000B330EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,11 +306,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -238,6 +324,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		87AB310F21941D4E00B330EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		FACECF490B3C4128354FF704 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -264,8 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87AB30DE21940BD000B330EA /* ViewController.swift in Sources */,
+				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
+				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
+				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
+				87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */,
+				87AB30FF219418A600B330EA /* LLCustomTabBar.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,
+				87AB310B21941BA000B330EA /* Commons.swift in Sources */,
+				87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87AB30DF21940BD000B330EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87AB30E021940BD000B330EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87AB30E421940BD100B330EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,7 +525,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
-				INFOPLIST_FILE = LLmyApp/Info.plist;
+				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,7 +545,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
-				INFOPLIST_FILE = LLmyApp/Info.plist;
+				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,11 @@
+disabled_rules: # rule identifiers to exclude from running
+  - force_cast
+  - trailing_whitespace
+  - cyclomatic_complexity
+  - unused_closure_parameter
+  - line_length
+  - identifier_name # 变量名称长度默认3到40字符, 暂时先忽略
+
+excluded: 
+  - Pods
+  - Carthage

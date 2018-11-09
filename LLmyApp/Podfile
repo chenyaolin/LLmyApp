@@ -7,6 +7,7 @@ inhibit_all_warnings!
 def shared_pods
     pod 'RxSwift',          '~> 4.0.0'
     pod 'RxCocoa',          '~> 4.0.0'
+    pod 'Moya/RxSwift',     '~> 10.0'
     pod 'SwiftLint'
 end
 
