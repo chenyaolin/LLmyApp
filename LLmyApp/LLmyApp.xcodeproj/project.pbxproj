@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87168631219917B60019968E /* ProgressPluginIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168630219917B60019968E /* ProgressPluginIn.swift */; };
+		87168635219918090019968E /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168634219918090019968E /* HUD.swift */; };
+		871686372199181F0019968E /* CRHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871686362199181F0019968E /* CRHUD.swift */; };
+		871686392199182C0019968E /* CRHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871686382199182C0019968E /* CRHUDProgressView.swift */; };
+		8716863B219918390019968E /* CRHUDLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716863A219918390019968E /* CRHUDLabelView.swift */; };
+		8716863D2199184D0019968E /* HUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716863C2199184D0019968E /* HUDHelper.swift */; };
+		8716863F219919600019968E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716863E219919600019968E /* UIViewExtension.swift */; };
+		871686412199264E0019968E /* 加载.gif in Resources */ = {isa = PBXBuildFile; fileRef = 871686402199264D0019968E /* 加载.gif */; };
+		87168643219951220019968E /* GatewayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168642219951220019968E /* GatewayHelper.swift */; };
+		8716864521995D800019968E /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716864421995D800019968E /* RandomString.swift */; };
+		87168648219961470019968E /* LLOCbridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87168647219961470019968E /* LLOCbridge.m */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
 		87AB30E321940BD100B330EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E221940BD100B330EA /* Assets.xcassets */; };
 		87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E421940BD100B330EA /* LaunchScreen.storyboard */; };
@@ -20,6 +31,26 @@
 		87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB310D21941CCA00B330EA /* BaseNavigationController.swift */; };
 		87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB3111219441D000B330EA /* LLMainViewController.swift */; };
 		87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB3113219441DF00B330EA /* LLMainUI.storyboard */; };
+		87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B06219C15BD00D479B0 /* LLHealthCardViewController.swift */; };
+		87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DF0B07219C15BD00D479B0 /* LLHealthCardViewController.xib */; };
+		87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B0B219C16B700D479B0 /* LLHealthCardViewModel.swift */; };
+		87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B0D219C178F00D479B0 /* RxSwift+Operator.swift */; };
+		87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B0F219C18EF00D479B0 /* ReusableViewProtocal.swift */; };
+		87DF0B17219C206B00D479B0 /* LLHealthCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B15219C206B00D479B0 /* LLHealthCardCell.swift */; };
+		87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DF0B16219C206B00D479B0 /* LLHealthCardCell.xib */; };
+		87DF0B1A219C21A400D479B0 /* LLHealthCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B19219C21A400D479B0 /* LLHealthCardModel.swift */; };
+		87DF0B1D219C22DD00D479B0 /* LLHealthCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B1C219C22DD00D479B0 /* LLHealthCardService.swift */; };
+		87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B1E219C231100D479B0 /* LLHealthCardApi.swift */; };
+		87DF0B21219C2D0A00D479B0 /* Obserable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B20219C2D0A00D479B0 /* Obserable+UITableView.swift */; };
+		87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF49E2195208E00EB5438 /* LLMainService.swift */; };
+		87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4A2219522D400EB5438 /* LLMainApi.swift */; };
+		87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4A42195257500EB5438 /* MoyaRequestProtocol.swift */; };
+		87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4A7219539CC00EB5438 /* LLMainBanner.swift */; };
+		87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4A92195618B00EB5438 /* ServiceResult.swift */; };
+		87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AB2195630000EB5438 /* ServiceError.swift */; };
+		87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AD21956D6900EB5438 /* Provider.swift */; };
+		87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */; };
+		87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4B22195933300EB5438 /* LLMainViewModel.swift */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +65,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87168630219917B60019968E /* ProgressPluginIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPluginIn.swift; sourceTree = "<group>"; };
+		87168634219918090019968E /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		871686362199181F0019968E /* CRHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHUD.swift; sourceTree = "<group>"; };
+		871686382199182C0019968E /* CRHUDProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHUDProgressView.swift; sourceTree = "<group>"; };
+		8716863A219918390019968E /* CRHUDLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHUDLabelView.swift; sourceTree = "<group>"; };
+		8716863C2199184D0019968E /* HUDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDHelper.swift; sourceTree = "<group>"; };
+		8716863E219919600019968E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		871686402199264D0019968E /* 加载.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "加载.gif"; sourceTree = "<group>"; };
+		87168642219951220019968E /* GatewayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayHelper.swift; sourceTree = "<group>"; };
+		8716864421995D800019968E /* RandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomString.swift; sourceTree = "<group>"; };
+		87168646219961460019968E /* LLmyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLmyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		87168647219961470019968E /* LLOCbridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOCbridge.m; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30DB21940BD000B330EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87AB30E221940BD100B330EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +94,26 @@
 		87AB310D21941CCA00B330EA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		87AB3111219441D000B330EA /* LLMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewController.swift; sourceTree = "<group>"; };
 		87AB3113219441DF00B330EA /* LLMainUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LLMainUI.storyboard; sourceTree = "<group>"; };
+		87DF0B06219C15BD00D479B0 /* LLHealthCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardViewController.swift; sourceTree = "<group>"; };
+		87DF0B07219C15BD00D479B0 /* LLHealthCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLHealthCardViewController.xib; sourceTree = "<group>"; };
+		87DF0B0B219C16B700D479B0 /* LLHealthCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardViewModel.swift; sourceTree = "<group>"; };
+		87DF0B0D219C178F00D479B0 /* RxSwift+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Operator.swift"; sourceTree = "<group>"; };
+		87DF0B0F219C18EF00D479B0 /* ReusableViewProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocal.swift; sourceTree = "<group>"; };
+		87DF0B15219C206B00D479B0 /* LLHealthCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardCell.swift; sourceTree = "<group>"; };
+		87DF0B16219C206B00D479B0 /* LLHealthCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLHealthCardCell.xib; sourceTree = "<group>"; };
+		87DF0B19219C21A400D479B0 /* LLHealthCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardModel.swift; sourceTree = "<group>"; };
+		87DF0B1C219C22DD00D479B0 /* LLHealthCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardService.swift; sourceTree = "<group>"; };
+		87DF0B1E219C231100D479B0 /* LLHealthCardApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardApi.swift; sourceTree = "<group>"; };
+		87DF0B20219C2D0A00D479B0 /* Obserable+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Obserable+UITableView.swift"; sourceTree = "<group>"; };
+		87DFF49E2195208E00EB5438 /* LLMainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainService.swift; sourceTree = "<group>"; };
+		87DFF4A2219522D400EB5438 /* LLMainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainApi.swift; sourceTree = "<group>"; };
+		87DFF4A42195257500EB5438 /* MoyaRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaRequestProtocol.swift; sourceTree = "<group>"; };
+		87DFF4A7219539CC00EB5438 /* LLMainBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainBanner.swift; sourceTree = "<group>"; };
+		87DFF4A92195618B00EB5438 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		87DFF4AB2195630000EB5438 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		87DFF4AD21956D6900EB5438 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelableProtocol.swift; sourceTree = "<group>"; };
+		87DFF4B22195933300EB5438 /* LLMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewModel.swift; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +147,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8716862F219917A00019968E /* Moya&Rx */ = {
+			isa = PBXGroup;
+			children = (
+				87168630219917B60019968E /* ProgressPluginIn.swift */,
+			);
+			path = "Moya&Rx";
+			sourceTree = "<group>";
+		};
+		87168632219917D80019968E /* Utils(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				87168633219917E80019968E /* CRHUD */,
+				8716863C2199184D0019968E /* HUDHelper.swift */,
+				87168642219951220019968E /* GatewayHelper.swift */,
+				8716864421995D800019968E /* RandomString.swift */,
+			);
+			path = "Utils(工具类)";
+			sourceTree = "<group>";
+		};
+		87168633219917E80019968E /* CRHUD */ = {
+			isa = PBXGroup;
+			children = (
+				871686402199264D0019968E /* 加载.gif */,
+				87168634219918090019968E /* HUD.swift */,
+				871686362199181F0019968E /* CRHUD.swift */,
+				871686382199182C0019968E /* CRHUDProgressView.swift */,
+				8716863A219918390019968E /* CRHUDLabelView.swift */,
+			);
+			path = CRHUD;
+			sourceTree = "<group>";
+		};
 		87AB30CF21940BD000B330EA = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +201,7 @@
 		87AB30DA21940BD000B330EA /* LLmyApp */ = {
 			isa = PBXGroup;
 			children = (
+				87168632219917D80019968E /* Utils(工具类) */,
 				87AB310921941B8000B330EA /* Other(其它) */,
 				87AB31002194191B00B330EA /* Extension(扩展) */,
 				87AB30FC2194181400B330EA /* UI(视图) */,
@@ -138,6 +233,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				87DF0B04219C158A00D479B0 /* 健康卡 */,
 				87AB310C21941CA500B330EA /* Base */,
 				87AB30FD2194181F00B330EA /* Tabbar */,
 				87AB3110219441B700B330EA /* Main(主界面) */,
@@ -158,8 +254,13 @@
 		87AB31002194191B00B330EA /* Extension(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				8716862F219917A00019968E /* Moya&Rx */,
 				87AB31012194195700B330EA /* NibLoadableProtocol.swift */,
 				87AB3103219419BE00B330EA /* UIColor+Hex.swift */,
+				8716863E219919600019968E /* UIViewExtension.swift */,
+				87DF0B0D219C178F00D479B0 /* RxSwift+Operator.swift */,
+				87DF0B0F219C18EF00D479B0 /* ReusableViewProtocal.swift */,
+				87DF0B20219C2D0A00D479B0 /* Obserable+UITableView.swift */,
 			);
 			path = "Extension(扩展)";
 			sourceTree = "<group>";
@@ -168,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				87AB310A21941BA000B330EA /* Commons.swift */,
+				87168647219961470019968E /* LLOCbridge.m */,
+				87168646219961460019968E /* LLmyApp-Bridging-Header.h */,
 			);
 			path = "Other(其它)";
 			sourceTree = "<group>";
@@ -176,6 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				87AB310D21941CCA00B330EA /* BaseNavigationController.swift */,
+				87DFF4A42195257500EB5438 /* MoyaRequestProtocol.swift */,
+				87DFF4A92195618B00EB5438 /* ServiceResult.swift */,
+				87DFF4AB2195630000EB5438 /* ServiceError.swift */,
+				87DFF4AD21956D6900EB5438 /* Provider.swift */,
+				87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -183,10 +291,85 @@
 		87AB3110219441B700B330EA /* Main(主界面) */ = {
 			isa = PBXGroup;
 			children = (
+				87DFF4B12195932300EB5438 /* ViewModel */,
+				87DFF4A6219539AC00EB5438 /* Model */,
+				87DFF49D2195206D00EB5438 /* Service */,
+				87DFF49C2195205E00EB5438 /* View */,
+			);
+			path = "Main(主界面)";
+			sourceTree = "<group>";
+		};
+		87DF0B04219C158A00D479B0 /* 健康卡 */ = {
+			isa = PBXGroup;
+			children = (
+				87DF0B1B219C22C400D479B0 /* Service */,
+				87DF0B0A219C16A000D479B0 /* ViewModel */,
+				87DF0B05219C159900D479B0 /* View */,
+			);
+			path = "健康卡";
+			sourceTree = "<group>";
+		};
+		87DF0B05219C159900D479B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87DF0B06219C15BD00D479B0 /* LLHealthCardViewController.swift */,
+				87DF0B07219C15BD00D479B0 /* LLHealthCardViewController.xib */,
+				87DF0B15219C206B00D479B0 /* LLHealthCardCell.swift */,
+				87DF0B16219C206B00D479B0 /* LLHealthCardCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87DF0B0A219C16A000D479B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				87DF0B0B219C16B700D479B0 /* LLHealthCardViewModel.swift */,
+				87DF0B19219C21A400D479B0 /* LLHealthCardModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87DF0B1B219C22C400D479B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87DF0B1C219C22DD00D479B0 /* LLHealthCardService.swift */,
+				87DF0B1E219C231100D479B0 /* LLHealthCardApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87DFF49C2195205E00EB5438 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				87AB3111219441D000B330EA /* LLMainViewController.swift */,
 				87AB3113219441DF00B330EA /* LLMainUI.storyboard */,
 			);
-			path = "Main(主界面)";
+			path = View;
+			sourceTree = "<group>";
+		};
+		87DFF49D2195206D00EB5438 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87DFF49E2195208E00EB5438 /* LLMainService.swift */,
+				87DFF4A2219522D400EB5438 /* LLMainApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87DFF4A6219539AC00EB5438 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87DFF4A7219539CC00EB5438 /* LLMainBanner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87DFF4B12195932300EB5438 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				87DFF4B22195933300EB5438 /* LLMainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
@@ -251,6 +434,7 @@
 				TargetAttributes = {
 					87AB30D721940BD000B330EA = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					87AB30EB21940BD100B330EA = {
 						CreatedOnToolsVersion = 9.3;
@@ -282,7 +466,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
+				871686412199264E0019968E /* 加载.gif in Resources */,
+				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
 				87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */,
 				87AB30E321940BD100B330EA /* Assets.xcassets in Resources */,
@@ -307,6 +494,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -315,6 +504,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -363,14 +554,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
+				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
+				87168635219918090019968E /* HUD.swift in Sources */,
+				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
+				8716864521995D800019968E /* RandomString.swift in Sources */,
+				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
+				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
+				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
+				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
+				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
 				87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */,
+				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
+				87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */,
+				87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */,
+				871686392199182C0019968E /* CRHUDProgressView.swift in Sources */,
+				87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */,
 				87AB30FF219418A600B330EA /* LLCustomTabBar.swift in Sources */,
+				87DF0B1D219C22DD00D479B0 /* LLHealthCardService.swift in Sources */,
+				87DF0B1A219C21A400D479B0 /* LLHealthCardModel.swift in Sources */,
+				87168648219961470019968E /* LLOCbridge.m in Sources */,
+				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
+				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,
 				87AB310B21941BA000B330EA /* Commons.swift in Sources */,
+				871686372199181F0019968E /* CRHUD.swift in Sources */,
+				87DF0B17219C206B00D479B0 /* LLHealthCardCell.swift in Sources */,
+				87168643219951220019968E /* GatewayHelper.swift in Sources */,
+				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
+				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,
+				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
+				87DF0B21219C2D0A00D479B0 /* Obserable+UITableView.swift in Sources */,
 				87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */,
+				8716863D2199184D0019968E /* HUDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +742,7 @@
 			baseConfigurationReference = DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
@@ -533,6 +753,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LLmyApp/Other(其它)/LLmyApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -543,6 +765,7 @@
 			baseConfigurationReference = DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
@@ -553,6 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LLmyApp/Other(其它)/LLmyApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

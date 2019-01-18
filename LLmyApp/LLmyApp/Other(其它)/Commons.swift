@@ -8,6 +8,14 @@
 
 import UIKit
 
+// MARK: 服务器根地址
+#if DEBUG
+//let kBaseURL = "http://120.24.63.55:8089/crPatient/cxf/rest/"  // 测试地址
+let kBaseURL = "https://api.cr-health.com:9443/crPatient/cxf/rest"  // 生产环境地址
+#else
+let kBaseURL = "https://api.cr-health.com:9443/crPatient/cxf/rest/"  // 生产环境地址
+#endif
+
 // MARK: - 设备相关
 let kMainBounds = UIScreen.main.bounds
 var kAppHeight: CGFloat { return UIScreen.main.bounds.size.height }

@@ -9,6 +9,8 @@ def shared_pods
     pod 'RxCocoa',          '~> 4.0.0'
     pod 'Moya/RxSwift',     '~> 10.0'
     pod 'SwiftLint'
+    pod 'HandyJSON'
+    pod 'Kingfisher',          '~> 4.2.0'
 end
 
 target 'LLmyApp' do
