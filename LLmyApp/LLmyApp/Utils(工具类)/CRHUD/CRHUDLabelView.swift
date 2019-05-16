@@ -23,7 +23,7 @@ class CRHUDLabelView: UIView {
         let labelMaxWidth = kMaxLabelHUDWidth - 50
         let string = message ?? ""
         let font = UIFont.systemFont(ofSize: 18)
-        let attributes = [NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.font: font]
         let option = NSStringDrawingOptions.usesLineFragmentOrigin
         let rect: CGRect = string.boundingRect(with: CGSize(width: labelMaxWidth, height: Int.max), options: option, attributes: attributes, context: nil)
         

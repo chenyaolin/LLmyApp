@@ -18,7 +18,8 @@ class LLMainService: NSObject {
     
     // 获取首页banner
     func getAdvertisement() -> Observable<ServiceResult<[MainBanner]>> {
-        return provider.rx.request(.getAdvertisement(), resultType: [MainBanner].self)
+//        return provider.rx.request(.getAdvertisement(), resultType: [MainBanner].self)
+        return provider.rx.request(.getAdvertisement, resultType: [MainBanner].self)
     }
     
 }

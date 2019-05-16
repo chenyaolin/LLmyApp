@@ -59,7 +59,7 @@ class LLTabBarViewController: UITabBarController {
         vc.title = title
         vc.tabBarItem.image = imageIcon
         vc.tabBarItem.selectedImage = selectImaIcon.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: LLdefaultGreenColor], for: UIControlState.selected)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: LLdefaultGreenColor], for: UIControl.State.selected)
         
 //        if title == "资讯" || title == "圈子" {
 //            return vc as? UINavigationController ?? UINavigationController()

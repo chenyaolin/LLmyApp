@@ -5,12 +5,12 @@ use_frameworks!
 inhibit_all_warnings!
 
 def shared_pods
-    pod 'RxSwift',          '~> 4.0.0'
-    pod 'RxCocoa',          '~> 4.0.0'
-    pod 'Moya/RxSwift',     '~> 10.0'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'Moya/RxSwift'
     pod 'SwiftLint'
-    pod 'HandyJSON'
-    pod 'Kingfisher',          '~> 4.2.0'
+    pod 'HandyJSON', '~> 5.0.0-beta'
+    pod 'Kingfisher'
 end
 
 target 'LLmyApp' do

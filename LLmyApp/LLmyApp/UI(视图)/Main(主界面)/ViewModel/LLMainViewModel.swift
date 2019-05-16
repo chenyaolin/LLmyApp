@@ -55,7 +55,7 @@ class LLMainViewModel: NSObject {
     func getAdvertisementWihtHandyJSON() {
         
         let privoder = MoyaProvider<LLMainApi>()
-        privoder.rx.request(.getAdvertisement()).asObservable().mapModel(LLMainBanner.self).subscribe(onNext: { (value) in
+        privoder.rx.request(.getAdvertisement).asObservable().mapModel(LLMainBanner.self).subscribe(onNext: { (value) in
             if let banners = value.lists {
                 for banner in banners {
                     print("\(banner.title ?? "没有标题") : HandyJSON")

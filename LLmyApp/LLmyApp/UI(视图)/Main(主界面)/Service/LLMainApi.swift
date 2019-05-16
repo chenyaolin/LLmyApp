@@ -10,7 +10,7 @@ import UIKit
 
 enum LLMainApi {
     //获取滚动广告图接口
-    case getAdvertisement()
+    case getAdvertisement
 }
 
 extension LLMainApi: Requestable {

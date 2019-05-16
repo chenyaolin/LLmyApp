@@ -41,6 +41,12 @@ class LLMainViewController: UIViewController {
             
             }.disposed(by: disposeBag)
         
+//        #if DEBUG
+//        print("测试")
+//        #else
+//        print("生产")
+//        #endif
+        
     }
     
 }
