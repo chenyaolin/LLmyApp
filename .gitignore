@@ -66,3 +66,41 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+LLmyApp/Pods/Alamofire/Source/AlamofireExtended.swift
+LLmyApp/Pods/Alamofire/Source/CachedResponseHandler.swift
+LLmyApp/Pods/Alamofire/Source/EventMonitor.swift
+LLmyApp/Pods/Alamofire/Source/HTTPHeaders.swift
+LLmyApp/Pods/Alamofire/Source/HTTPMethod.swift
+LLmyApp/Pods/Alamofire/Source/MultipartUpload.swift
+LLmyApp/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+LLmyApp/Pods/Alamofire/Source/ParameterEncoder.swift
+LLmyApp/Pods/Alamofire/Source/Protector.swift
+LLmyApp/Pods/Alamofire/Source/RedirectHandler.swift
+LLmyApp/Pods/Alamofire/Source/RequestInterceptor.swift
+LLmyApp/Pods/Alamofire/Source/RequestTaskMap.swift
+LLmyApp/Pods/Alamofire/Source/Result+Alamofire.swift
+LLmyApp/Pods/Alamofire/Source/RetryPolicy.swift
+LLmyApp/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+LLmyApp/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+LLmyApp/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+LLmyApp/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+LLmyApp/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+LLmyApp/Pods/Moya/Sources/Moya/RequestTypeWrapper.swift
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay-dummy.m
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay-Info.plist
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay-prefix.pch
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay-umbrella.h
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay.modulemap
+LLmyApp/Pods/Target Support Files/RxRelay/RxRelay.xcconfig
+LLmyApp/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-Debug-input-files.xcfilelist
+LLmyApp/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-Debug-output-files.xcfilelist
+LLmyApp/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-Release-input-files.xcfilelist
+LLmyApp/Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-Release-output-files.xcfilelist
+LLmyApp/Pods/RxSwift/RxSwift/Date+Dispatch.swift
+LLmyApp/Pods/RxSwift/RxSwift/Observables/CompactMap.swift
+LLmyApp/Pods/RxRelay/LICENSE.md
+LLmyApp/Pods/RxRelay/README.md
+LLmyApp/Pods/RxRelay/RxRelay/BehaviorRelay.swift
+LLmyApp/Pods/RxRelay/RxRelay/Observable+Bind.swift
+LLmyApp/Pods/RxRelay/RxRelay/PublishRelay.swift
+LLmyApp/Pods/RxRelay/RxRelay/Utils.swift
