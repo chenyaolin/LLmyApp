@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		87168643219951220019968E /* GatewayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168642219951220019968E /* GatewayHelper.swift */; };
 		8716864521995D800019968E /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716864421995D800019968E /* RandomString.swift */; };
 		87168648219961470019968E /* LLOCbridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87168647219961470019968E /* LLOCbridge.m */; };
+		8748487D2394E11D0041F3CB /* Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8748487C2394E11D0041F3CB /* Bundle */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
 		87AB30E321940BD100B330EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E221940BD100B330EA /* Assets.xcassets */; };
 		87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E421940BD100B330EA /* LaunchScreen.storyboard */; };
@@ -77,6 +78,7 @@
 		8716864421995D800019968E /* RandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomString.swift; sourceTree = "<group>"; };
 		87168646219961460019968E /* LLmyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLmyApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		87168647219961470019968E /* LLOCbridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOCbridge.m; sourceTree = "<group>"; };
+		8748487C2394E11D0041F3CB /* Bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bundle; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30DB21940BD000B330EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87AB30E221940BD100B330EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +180,14 @@
 			path = CRHUD;
 			sourceTree = "<group>";
 		};
+		8748487E2394E1500041F3CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8748487C2394E11D0041F3CB /* Bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		87AB30CF21940BD000B330EA = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +211,7 @@
 		87AB30DA21940BD000B330EA /* LLmyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8748487E2394E1500041F3CB /* Resources */,
 				87168632219917D80019968E /* Utils(工具类) */,
 				87AB310921941B8000B330EA /* Other(其它) */,
 				87AB31002194191B00B330EA /* Extension(扩展) */,
@@ -430,7 +441,7 @@
 				CLASSPREFIX = LL;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = LinChen;
+				ORGANIZATIONNAME = ManlyCamera;
 				TargetAttributes = {
 					87AB30D721940BD000B330EA = {
 						CreatedOnToolsVersion = 9.3;
@@ -466,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8748487D2394E11D0041F3CB /* Bundle in Resources */,
 				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
@@ -491,25 +503,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LLmyApp/Pods-LLmyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -746,7 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -771,7 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

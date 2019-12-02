@@ -29,10 +29,10 @@ class LLHealthCardViewModel: NSObject {
             BQHudView.endActive()
             if let healthCards = value.content {
                 print("")
-//                self?.healthCards.value = healthCards
-//                for healthCard in healthCards {
-//                    print("\(healthCard.name ?? "没有标题") : Codable")
-//                }
+                self?.healthCards.value = healthCards
+                for healthCard in healthCards {
+                    print("\(healthCard.name ?? "没有标题") : Codable")
+                }
             }
         }, onError: { (error) in
             print("\(error)")

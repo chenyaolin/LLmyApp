@@ -20,3 +20,16 @@ extension Reactive where Base: UITableView {
             return items(cellIdentifier: T.defaultReuseIdentifier, cellType: T.self)
     }
 }
+
+// collectionview cell 绑定
+extension Reactive where Base: UICollectionView {
+    func items<S: Sequence, Cell: UICollectionViewCell, O : ObservableType>
+        (_: Cell.Type)
+        -> (_ source: O)
+        -> (_ configureCell: @escaping (Int, S.Iterator.Element, Cell) -> Void)
+        -> Disposable
+        where O.Element == S, Cell: Reusable {
+            return items(cellIdentifier: Cell.defaultReuseIdentifier, cellType: Cell.self)
+    }
+}
+

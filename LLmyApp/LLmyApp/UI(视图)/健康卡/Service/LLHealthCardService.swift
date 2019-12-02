@@ -18,9 +18,9 @@ class LLHealthCardService: NSObject {
     private let provider = Provider<LLHealthCardApi>(plugins: [ProgressPluginIn()])
     
     // 获取首页banner
-    func requestECardNoInfo() -> Observable<ServiceResult<CRUserInfo>> {
+    func requestECardNoInfo() -> Observable<ServiceResult<[CRHealthCard]>> {
 //        return provider.rx.request(.get, resultType: [CRHealthCard].self)
-        return provider.rx.request(.getECardNoInfo(patId: "1"), resultType: CRUserInfo.self)
+        return provider.rx.request(.getECardNoInfo(patId: "1"), resultType: [CRHealthCard].self)
     }
     
 }

@@ -7,7 +7,7 @@
 //
 
 import Moya
-import Result
+//import Result
 
 /// 加载动画插件
 struct ProgressPluginIn: PluginType {
