@@ -1,49 +1,50 @@
 PODS:
-  - Alamofire (5.0.0-rc.3)
+  - Alamofire (5.2.1)
   - HandyJSON (5.0.0-beta.1)
   - Kingfisher (4.10.1)
-  - Moya/Core (14.0.0-beta.5):
-    - Alamofire (= 5.0.0-rc.3)
-  - Moya/RxSwift (14.0.0-beta.5):
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
-  - RxCocoa (5.0.1):
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxSwift (5.1.1)
   - SwiftLint (0.32.0)
 
 DEPENDENCIES:
   - HandyJSON (~> 5.0.0-beta)
   - Kingfisher
-  - Moya/RxSwift (~> 14.0.0-beta.5)
-  - RxCocoa (= 5.0.1)
-  - RxSwift (= 5.0.1)
+  - Moya/RxSwift (~> 14.0.0)
+  - RxCocoa (= 5.1.1)
+  - RxSwift (= 5.1.1)
   - SwiftLint
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
-    - HandyJSON
-    - Kingfisher
     - Moya
     - RxCocoa
     - RxRelay
     - RxSwift
+  trunk:
+    - HandyJSON
+    - Kingfisher
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  Moya: 2c16c3fe92eda302070213452281b59198f946d8
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: 330720d4117f4c396491ee7d81e336d0d6ecdc8a
+PODFILE CHECKSUM: 8a534dd6f57e845ae4662661b4c63e4247287325
 
 COCOAPODS: 1.8.4
