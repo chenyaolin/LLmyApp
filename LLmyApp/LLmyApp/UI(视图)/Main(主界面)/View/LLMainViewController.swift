@@ -36,7 +36,8 @@ class LLMainViewController: UIViewController {
         
         button.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
 //            self?.viewModel.getAdvertisement()
-            let vc = LLHealthCardViewController()
+//            let vc = LLHealthCardViewController()
+            let vc = LLCoreDataViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
             
             }.disposed(by: disposeBag)

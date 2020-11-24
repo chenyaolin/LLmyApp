@@ -12,6 +12,7 @@ def shared_pods
     pod 'SwiftLint'
     pod 'HandyJSON', '~> 5.0.0-beta'
     pod 'Kingfisher'
+    pod 'SnapKit'
 end
 
 target 'LLmyApp' do

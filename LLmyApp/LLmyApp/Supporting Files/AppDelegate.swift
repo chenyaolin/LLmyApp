@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = LLTabBarViewController.shareTabBarVC
         window?.makeKeyAndVisible()
         
+        _ = LLDBManager.default
+        let documentPath2 = NSHomeDirectory() + "/Documents"
+        print("\(documentPath2)")
+        
         return true
     }
 

@@ -52,6 +52,14 @@
 		87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AD21956D6900EB5438 /* Provider.swift */; };
 		87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */; };
 		87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4B22195933300EB5438 /* LLMainViewModel.swift */; };
+		8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */; };
+		8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB7254BEBAA000670F4 /* LLFish+.swift */; };
+		8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */; };
+		8C954757254AB77000EF77C4 /* LLFish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C954755254AB77000EF77C4 /* LLFish.xcdatamodeld */; };
+		8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475A254AB99600EF77C4 /* Fish+CoreDataClass copy.swift */; };
+		8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */; };
+		8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954760254ABB7F00EF77C4 /* LLDBManager.swift */; };
+		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +124,14 @@
 		87DFF4AD21956D6900EB5438 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelableProtocol.swift; sourceTree = "<group>"; };
 		87DFF4B22195933300EB5438 /* LLMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewModel.swift; sourceTree = "<group>"; };
+		8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBaseOnCoreData.swift; sourceTree = "<group>"; };
+		8C90ECB7254BEBAA000670F4 /* LLFish+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LLFish+.swift"; sourceTree = "<group>"; };
+		8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCoreDataViewController.swift; sourceTree = "<group>"; };
+		8C954756254AB77000EF77C4 /* LLFish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LLFish.xcdatamodel; sourceTree = "<group>"; };
+		8C95475A254AB99600EF77C4 /* Fish+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
+		8C954760254ABB7F00EF77C4 /* LLDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBManager.swift; sourceTree = "<group>"; };
+		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +260,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				8CD6A3E12549763A005D76A9 /* DB(数据库) */,
 				87DF0B04219C158A00D479B0 /* 健康卡 */,
 				87AB310C21941CA500B330EA /* Base */,
 				87AB30FD2194181F00B330EA /* Tabbar */,
@@ -381,6 +398,29 @@
 				87DFF4B22195933300EB5438 /* LLMainViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8C954754254AB73400EF77C4 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */,
+				8C95475A254AB99600EF77C4 /* Fish+CoreDataClass copy.swift */,
+				8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */,
+				8C954755254AB77000EF77C4 /* LLFish.xcdatamodeld */,
+				8C954760254ABB7F00EF77C4 /* LLDBManager.swift */,
+				8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */,
+				8C90ECB7254BEBAA000670F4 /* LLFish+.swift */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		8CD6A3E12549763A005D76A9 /* DB(数据库) */ = {
+			isa = PBXGroup;
+			children = (
+				8C954754254AB73400EF77C4 /* CoreDataTest */,
+				8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */,
+			);
+			path = "DB(数据库)";
 			sourceTree = "<group>";
 		};
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
@@ -554,7 +594,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */,
+				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
+				8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */,
 				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
 				87168635219918090019968E /* HUD.swift in Sources */,
 				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
@@ -566,8 +608,11 @@
 				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
 				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
+				8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */,
 				87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */,
+				8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */,
 				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
+				8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */,
 				87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */,
 				87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */,
 				871686392199182C0019968E /* CRHUDProgressView.swift in Sources */,
@@ -578,11 +623,14 @@
 				87168648219961470019968E /* LLOCbridge.m in Sources */,
 				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
 				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
+				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,
 				87AB310B21941BA000B330EA /* Commons.swift in Sources */,
+				8C954757254AB77000EF77C4 /* LLFish.xcdatamodeld in Sources */,
 				871686372199181F0019968E /* CRHUD.swift in Sources */,
 				87DF0B17219C206B00D479B0 /* LLHealthCardCell.swift in Sources */,
 				87168643219951220019968E /* GatewayHelper.swift in Sources */,
+				8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */,
 				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
 				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,
 				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
@@ -855,6 +903,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C954755254AB77000EF77C4 /* LLFish.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C954756254AB77000EF77C4 /* LLFish.xcdatamodel */,
+			);
+			currentVersion = 8C954756254AB77000EF77C4 /* LLFish.xcdatamodel */;
+			path = LLFish.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87AB30D021940BD000B330EA /* Project object */;
 }
