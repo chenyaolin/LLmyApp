@@ -1,14 +1,17 @@
 #source 'https://mirror.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://github.com/chenyaolin/LLSpecs.git'
 
 platform :ios, '10.0'
 use_frameworks!
 inhibit_all_warnings!
 
 def shared_pods
+    pod 'BBRTC', '2.0.3'
     pod 'RxSwift', '5.1.1'
     pod 'RxCocoa', '5.1.1'
     pod 'Moya/RxSwift', '~> 14.0.0'
+#    pod 'Moya', '~> 14.0.0'
     pod 'SwiftLint'
     pod 'HandyJSON', '~> 5.0.0-beta'
     pod 'Kingfisher'

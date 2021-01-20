@@ -1,0 +1,6 @@
+framework module BBRTC {
+  umbrella header "BBRTC-umbrella.h"
+
+  export *
+  module * { export * }
+}

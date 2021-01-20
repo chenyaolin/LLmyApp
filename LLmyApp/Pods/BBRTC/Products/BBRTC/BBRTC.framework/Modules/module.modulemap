@@ -1,0 +1,11 @@
+framework module BBRTC {
+  umbrella header "BBRTC.h"
+
+  export *
+  module * { export * }
+}
+
+module BBRTC.Swift {
+    header "BBRTC-Swift.h"
+    requires objc
+}
