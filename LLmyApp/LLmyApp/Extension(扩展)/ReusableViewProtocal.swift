@@ -50,3 +50,26 @@ extension UITableView {
     }
     
 }
+
+// MARK: - UICollectionView扩展
+extension UICollectionView {
+    func register<T: UICollectionViewCell>(_: T.Type) where T: Reusable {
+        register(T.self, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
+    }
+    
+    func register<T: UICollectionViewCell>(_: T.Type) where T: Reusable, T: NibReusable {
+        let nib = UINib(nibName: T.nibName, bundle: nil)
+        register(nib, forCellWithReuseIdentifier: T.defaultReuseIdentifier)
+    }
+    
+    func dequeueReusableCell<T:UICollectionViewCell>(_ type: T.Type, indexPath: IndexPath) -> T where T: Reusable {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
+            fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
+        }
+        return cell
+    }
+    
+    func currentCell<T: UICollectionViewCell>(_: T.Type, indexPath: IndexPath) -> T where T: Reusable {
+        return cellForItem(at: indexPath) as! T
+    }
+}

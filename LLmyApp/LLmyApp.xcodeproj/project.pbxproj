@@ -52,6 +52,13 @@
 		87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AD21956D6900EB5438 /* Provider.swift */; };
 		87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */; };
 		87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4B22195933300EB5438 /* LLMainViewModel.swift */; };
+		8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */; };
+		8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */; };
+		8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */; };
+		8C5ABC9425B9199900763628 /* LLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC9325B9199900763628 /* LLUtils.swift */; };
+		8C5ABC9A25B9770A00763628 /* LLDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC9925B9770A00763628 /* LLDatePickerView.swift */; };
+		8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5ABC9F25B9783000763628 /* LLDatePickerView.xib */; };
+		8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABCA325B978CF00763628 /* DateExtension.swift */; };
 		8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */; };
 		8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB7254BEBAA000670F4 /* LLFish+.swift */; };
 		8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */; };
@@ -59,6 +66,7 @@
 		8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475A254AB99600EF77C4 /* Fish+CoreDataClass copy.swift */; };
 		8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */; };
 		8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954760254ABB7F00EF77C4 /* LLDBManager.swift */; };
+		8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */; };
 		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +132,13 @@
 		87DFF4AD21956D6900EB5438 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelableProtocol.swift; sourceTree = "<group>"; };
 		87DFF4B22195933300EB5438 /* LLMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewModel.swift; sourceTree = "<group>"; };
+		8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceCollectionVc.swift; sourceTree = "<group>"; };
+		8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceCollectionCell.swift; sourceTree = "<group>"; };
+		8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LLEqualSpaceData.json; sourceTree = "<group>"; };
+		8C5ABC9325B9199900763628 /* LLUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLUtils.swift; sourceTree = "<group>"; };
+		8C5ABC9925B9770A00763628 /* LLDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDatePickerView.swift; sourceTree = "<group>"; };
+		8C5ABC9F25B9783000763628 /* LLDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLDatePickerView.xib; sourceTree = "<group>"; };
+		8C5ABCA325B978CF00763628 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBaseOnCoreData.swift; sourceTree = "<group>"; };
 		8C90ECB7254BEBAA000670F4 /* LLFish+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LLFish+.swift"; sourceTree = "<group>"; };
 		8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCoreDataViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +146,7 @@
 		8C95475A254AB99600EF77C4 /* Fish+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataClass copy.swift"; sourceTree = "<group>"; };
 		8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		8C954760254ABB7F00EF77C4 /* LLDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBManager.swift; sourceTree = "<group>"; };
+		8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceFlowLayout.swift; sourceTree = "<group>"; };
 		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +196,7 @@
 				8716863C2199184D0019968E /* HUDHelper.swift */,
 				87168642219951220019968E /* GatewayHelper.swift */,
 				8716864421995D800019968E /* RandomString.swift */,
+				8C5ABC9325B9199900763628 /* LLUtils.swift */,
 			);
 			path = "Utils(工具类)";
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 		87AB30DA21940BD000B330EA /* LLmyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8CA2A93E25B81F4600FE0615 /* Public */,
 				8748487E2394E1500041F3CB /* Resources */,
 				87168632219917D80019968E /* Utils(工具类) */,
 				87AB310921941B8000B330EA /* Other(其它) */,
@@ -260,6 +278,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				8CA2A93D25B81F2400FE0615 /* iboss */,
 				8CD6A3E12549763A005D76A9 /* DB(数据库) */,
 				87DF0B04219C158A00D479B0 /* 健康卡 */,
 				87AB310C21941CA500B330EA /* Base */,
@@ -282,6 +301,7 @@
 		87AB31002194191B00B330EA /* Extension(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				8C5ABCA325B978CF00763628 /* DateExtension.swift */,
 				8716862F219917A00019968E /* Moya&Rx */,
 				87AB31012194195700B330EA /* NibLoadableProtocol.swift */,
 				87AB3103219419BE00B330EA /* UIColor+Hex.swift */,
@@ -400,6 +420,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8C5ABC9825B9766400763628 /* DatePickView */ = {
+			isa = PBXGroup;
+			children = (
+				8C5ABC9925B9770A00763628 /* LLDatePickerView.swift */,
+				8C5ABC9F25B9783000763628 /* LLDatePickerView.xib */,
+			);
+			path = DatePickView;
+			sourceTree = "<group>";
+		};
 		8C954754254AB73400EF77C4 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +441,25 @@
 				8C90ECB7254BEBAA000670F4 /* LLFish+.swift */,
 			);
 			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		8CA2A93D25B81F2400FE0615 /* iboss */ = {
+			isa = PBXGroup;
+			children = (
+				8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */,
+				8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */,
+				8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */,
+			);
+			path = iboss;
+			sourceTree = "<group>";
+		};
+		8CA2A93E25B81F4600FE0615 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8C5ABC9825B9766400763628 /* DatePickView */,
+				8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		8CD6A3E12549763A005D76A9 /* DB(数据库) */ = {
@@ -523,6 +571,8 @@
 				871686412199264E0019968E /* 加载.gif in Resources */,
 				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
+				8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */,
+				8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */,
 				87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */,
 				87AB30E321940BD100B330EA /* Assets.xcassets in Resources */,
 			);
@@ -566,7 +616,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		FACECF490B3C4128354FF704 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -593,6 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5ABC9A25B9770A00763628 /* LLDatePickerView.swift in Sources */,
 				87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */,
 				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
@@ -603,8 +654,10 @@
 				8716864521995D800019968E /* RandomString.swift in Sources */,
 				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
 				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
+				8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */,
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
 				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
+				8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */,
 				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
 				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
@@ -623,7 +676,9 @@
 				87168648219961470019968E /* LLOCbridge.m in Sources */,
 				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
 				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
+				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
 				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
+				8C5ABC9425B9199900763628 /* LLUtils.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,
 				87AB310B21941BA000B330EA /* Commons.swift in Sources */,
 				8C954757254AB77000EF77C4 /* LLFish.xcdatamodeld in Sources */,
@@ -634,6 +689,7 @@
 				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
 				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,
 				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
+				8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */,
 				87DF0B21219C2D0A00D479B0 /* Obserable+UITableView.swift in Sources */,
 				87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */,
 				8716863D2199184D0019968E /* HUDHelper.swift in Sources */,
@@ -792,6 +848,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -817,6 +874,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
