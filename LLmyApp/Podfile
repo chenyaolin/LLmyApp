@@ -16,6 +16,7 @@ def shared_pods
     pod 'HandyJSON', '~> 5.0.0-beta'
     pod 'Kingfisher'
     pod 'SnapKit'
+    pod 'FWPopupView'
 end
 
 target 'LLmyApp' do

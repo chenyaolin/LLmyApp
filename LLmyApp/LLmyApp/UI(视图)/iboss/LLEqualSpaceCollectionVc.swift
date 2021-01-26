@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FWPopupView
 
 class LLEqualSpaceCollectionVc: UIViewController {
     
@@ -42,6 +43,22 @@ class LLEqualSpaceCollectionVc: UIViewController {
         view.addSubview(myCollectionView)
         myCollectionView.frame = CGRect(x: 0, y: 0, width: kAppWidth, height: 200)
     }
+    
+    func pop() {
+        let popView = LLPopView(withTip: "")
+        popView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+
+        let vProperty = FWPopupViewProperty()
+        vProperty.popupCustomAlignment = .center
+        vProperty.popupAnimationType = .scale
+        vProperty.maskViewColor = UIColor(white: 0, alpha: 0.5)
+        vProperty.touchWildToHide = "1"
+        vProperty.popupViewEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        vProperty.animationDuration = 0.3
+        popView.vProperty = vProperty
+
+        popView.show()
+    }
 
 }
 
@@ -63,10 +80,12 @@ extension LLEqualSpaceCollectionVc: UICollectionViewDataSource, UICollectionView
 //            print("111111 \(date.year)-\(date.month)-\(date.day)-")
 //        }
         
-        let tipPopUpView = CRTipPopUpView()
-        tipPopUpView.frame = UIScreen.main.bounds
-        tipPopUpView.remark = "哈哈"
-        tipPopUpView.show()
+//        let tipPopUpView = CRTipPopUpView()
+//        tipPopUpView.frame = UIScreen.main.bounds
+//        tipPopUpView.remark = "哈哈"
+//        tipPopUpView.show()
+        
+        pop()
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

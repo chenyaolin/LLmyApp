@@ -59,6 +59,7 @@
 		8C5ABC9A25B9770A00763628 /* LLDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC9925B9770A00763628 /* LLDatePickerView.swift */; };
 		8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5ABC9F25B9783000763628 /* LLDatePickerView.xib */; };
 		8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABCA325B978CF00763628 /* DateExtension.swift */; };
+		8C7841FD25C00FBB00697A0A /* LLPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7841FC25C00FBB00697A0A /* LLPopView.swift */; };
 		8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */; };
 		8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECB7254BEBAA000670F4 /* LLFish+.swift */; };
 		8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */; };
@@ -147,6 +148,7 @@
 		8C5ABC9925B9770A00763628 /* LLDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDatePickerView.swift; sourceTree = "<group>"; };
 		8C5ABC9F25B9783000763628 /* LLDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLDatePickerView.xib; sourceTree = "<group>"; };
 		8C5ABCA325B978CF00763628 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8C7841FC25C00FBB00697A0A /* LLPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPopView.swift; sourceTree = "<group>"; };
 		8C90ECB3254BEB08000670F4 /* LLBaseOnCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBaseOnCoreData.swift; sourceTree = "<group>"; };
 		8C90ECB7254BEBAA000670F4 /* LLFish+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LLFish+.swift"; sourceTree = "<group>"; };
 		8C90ECBB254BF340000670F4 /* LLCoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLCoreDataViewController.swift; sourceTree = "<group>"; };
@@ -515,6 +517,7 @@
 			children = (
 				8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */,
 				8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */,
+				8C7841FC25C00FBB00697A0A /* LLPopView.swift */,
 			);
 			path = PopView;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */,
 				87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */,
 				871686392199182C0019968E /* CRHUDProgressView.swift in Sources */,
+				8C7841FD25C00FBB00697A0A /* LLPopView.swift in Sources */,
 				87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */,
 				87AB30FF219418A600B330EA /* LLCustomTabBar.swift in Sources */,
 				87DF0B1D219C22DD00D479B0 /* LLHealthCardService.swift in Sources */,
@@ -906,7 +910,7 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -936,7 +940,7 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
