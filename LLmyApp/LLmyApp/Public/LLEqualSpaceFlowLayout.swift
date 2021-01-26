@@ -43,7 +43,7 @@ class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
             
             let isGreaterA = xNextOffset > (collectionView?.bounds.size.width ?? 0) - sectionInset.right
             let isGreaterB = (xNextOffset - minimumInteritemSpacing) > (collectionView?.bounds.size.width ?? 0) - sectionInset.right
-//            isGreater = isGreaterA && isGreaterB
+            //            isGreater = isGreaterA && isGreaterB
             isGreater = isGreaterB
             
             if isGreater {
@@ -62,34 +62,31 @@ class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        super.layoutAttributesForElements(in: rect)
         _ = itemAttributes.map({
-            if rect.contains($0.frame) {
+            if rect.contains($0.frame) && !itemAttributes.contains($0) {
                 itemAttributes.append($0)
             }
         })
         return itemAttributes
-//        super.layoutAttributesForElements(in: rect)
-//        return itemAttributes.filtered(using: NSPredicate(block: { evaluatedObject, bindings in
-//            return rect.intersects(evaluatedObject?.frame ?? CGRect.zero)
-//        })) as? [UICollectionViewLayoutAttributes]
     }
     
     override var collectionViewContentSize: CGSize {
         get {
             let size = super.collectionViewContentSize
-
+            
             var ySet: Set<CGFloat> = []
             var height: CGFloat = 0.0
-
+            
             if itemAttributes.count > 0 {
                 for attribute in itemAttributes {
                     ySet.insert(attribute.frame.origin.y)
                     height = attribute.frame.size.height
                 }
             }
-
+            
             let newSize = CGSize(width: size.width, height: (height * CGFloat(ySet.count)) + (minimumLineSpacing * CGFloat((ySet.count - 1))) + sectionInset.top + sectionInset.bottom)
-
+            
             return newSize
         }
         set {
