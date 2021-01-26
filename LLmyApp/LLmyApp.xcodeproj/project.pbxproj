@@ -74,6 +74,8 @@
 		8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE2E25BACF4300599EBC /* libc++.tbd */; };
 		8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */; };
 		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
+		8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */; };
+		8CF07BBE25BFF53800CBC3BB /* CRTipPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +166,8 @@
 		8CD0EE3225BACF6500599EBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayResult.swift; sourceTree = "<group>"; };
 		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
+		8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRTipPopUpView.swift; sourceTree = "<group>"; };
+		8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRTipPopUpView.xib; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -466,6 +470,7 @@
 		8CA2A93D25B81F2400FE0615 /* iboss */ = {
 			isa = PBXGroup;
 			children = (
+				8CF07BBA25BFF52000CBC3BB /* PopView */,
 				8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */,
 				8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */,
 				8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */,
@@ -503,6 +508,15 @@
 				8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */,
 			);
 			path = "DB(数据库)";
+			sourceTree = "<group>";
+		};
+		8CF07BBA25BFF52000CBC3BB /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */,
+				8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */,
+			);
+			path = PopView;
 			sourceTree = "<group>";
 		};
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
@@ -601,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF07BBE25BFF53800CBC3BB /* CRTipPopUpView.xib in Resources */,
 				8748487D2394E11D0041F3CB /* Bundle in Resources */,
 				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
@@ -691,6 +706,7 @@
 				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
 				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
 				8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */,
+				8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */,
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
 				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
 				8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */,

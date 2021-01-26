@@ -58,10 +58,15 @@ extension LLEqualSpaceCollectionVc: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        myDatePicker.show(WithShowDay: true)
-        myDatePicker.pickFinishBlock = { [weak self] (date: YearAndMonthModel) -> () in
-            print("111111 \(date.year)-\(date.month)-\(date.day)-")
-        }
+//        myDatePicker.show(WithShowDay: true)
+//        myDatePicker.pickFinishBlock = { [weak self] (date: YearAndMonthModel) -> () in
+//            print("111111 \(date.year)-\(date.month)-\(date.day)-")
+//        }
+        
+        let tipPopUpView = CRTipPopUpView()
+        tipPopUpView.frame = UIScreen.main.bounds
+        tipPopUpView.remark = "哈哈"
+        tipPopUpView.show()
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
