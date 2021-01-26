@@ -24,10 +24,3 @@ class LLUtils: NSObject {
     }
     
 }
-
-extension Data {
-    func decode<T: Codable>(_ type: T.Type) -> T? {
-        let decoder = JSONDecoder()
-        return (try? decoder.decode(type.self, from: self))
-    }
-}

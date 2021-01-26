@@ -67,6 +67,12 @@
 		8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */; };
 		8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954760254ABB7F00EF77C4 /* LLDBManager.swift */; };
 		8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */; };
+		8CD0EE0025BABF5500599EBC /* LLPayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EDFF25BABF5500599EBC /* LLPayUtils.swift */; };
+		8CD0EE0625BAC49900599EBC /* LLWXPayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE0525BAC49900599EBC /* LLWXPayModel.swift */; };
+		8CD0EE0F25BACBC100599EBC /* Decode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE0E25BACBC100599EBC /* Decode+.swift */; };
+		8CD0EE1F25BACEB200599EBC /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE1E25BACEB200599EBC /* libWeChatSDK.a */; };
+		8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE2E25BACF4300599EBC /* libc++.tbd */; };
+		8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */; };
 		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
@@ -147,6 +153,16 @@
 		8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		8C954760254ABB7F00EF77C4 /* LLDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBManager.swift; sourceTree = "<group>"; };
 		8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceFlowLayout.swift; sourceTree = "<group>"; };
+		8CD0EDFF25BABF5500599EBC /* LLPayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayUtils.swift; sourceTree = "<group>"; };
+		8CD0EE0525BAC49900599EBC /* LLWXPayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLWXPayModel.swift; sourceTree = "<group>"; };
+		8CD0EE0925BAC61100599EBC /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		8CD0EE0A25BAC61100599EBC /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		8CD0EE0B25BAC61100599EBC /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		8CD0EE0E25BACBC100599EBC /* Decode+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decode+.swift"; sourceTree = "<group>"; };
+		8CD0EE1E25BACEB200599EBC /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		8CD0EE2E25BACF4300599EBC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8CD0EE3225BACF6500599EBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayResult.swift; sourceTree = "<group>"; };
 		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */,
+				8CD0EE1F25BACEB200599EBC /* libWeChatSDK.a in Frameworks */,
 				9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +210,7 @@
 		87168632219917D80019968E /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				8CD0EDFE25BAB91000599EBC /* LLPay */,
 				87168633219917E80019968E /* CRHUD */,
 				8716863C2199184D0019968E /* HUDHelper.swift */,
 				87168642219951220019968E /* GatewayHelper.swift */,
@@ -309,6 +328,7 @@
 				87DF0B0D219C178F00D479B0 /* RxSwift+Operator.swift */,
 				87DF0B0F219C18EF00D479B0 /* ReusableViewProtocal.swift */,
 				87DF0B20219C2D0A00D479B0 /* Obserable+UITableView.swift */,
+				8CD0EE0E25BACBC100599EBC /* Decode+.swift */,
 			);
 			path = "Extension(扩展)";
 			sourceTree = "<group>";
@@ -462,6 +482,20 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		8CD0EDFE25BAB91000599EBC /* LLPay */ = {
+			isa = PBXGroup;
+			children = (
+				8CD0EE1E25BACEB200599EBC /* libWeChatSDK.a */,
+				8CD0EE0925BAC61100599EBC /* WechatAuthSDK.h */,
+				8CD0EE0B25BAC61100599EBC /* WXApi.h */,
+				8CD0EE0A25BAC61100599EBC /* WXApiObject.h */,
+				8CD0EDFF25BABF5500599EBC /* LLPayUtils.swift */,
+				8CD0EE0525BAC49900599EBC /* LLWXPayModel.swift */,
+				8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */,
+			);
+			path = LLPay;
+			sourceTree = "<group>";
+		};
 		8CD6A3E12549763A005D76A9 /* DB(数据库) */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,6 +508,8 @@
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CD0EE3225BACF6500599EBC /* libz.tbd */,
+				8CD0EE2E25BACF4300599EBC /* libc++.tbd */,
 				EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */,
 			);
 			name = Frameworks;
@@ -658,6 +694,7 @@
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
 				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
 				8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */,
+				8CD0EE0625BAC49900599EBC /* LLWXPayModel.swift in Sources */,
 				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
 				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
@@ -679,6 +716,7 @@
 				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
 				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
 				8C5ABC9425B9199900763628 /* LLUtils.swift in Sources */,
+				8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,
 				87AB310B21941BA000B330EA /* Commons.swift in Sources */,
 				8C954757254AB77000EF77C4 /* LLFish.xcdatamodeld in Sources */,
@@ -688,9 +726,11 @@
 				8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */,
 				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
 				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,
+				8CD0EE0025BABF5500599EBC /* LLPayUtils.swift in Sources */,
 				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
 				8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */,
 				87DF0B21219C2D0A00D479B0 /* Obserable+UITableView.swift in Sources */,
+				8CD0EE0F25BACBC100599EBC /* Decode+.swift in Sources */,
 				87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */,
 				8716863D2199184D0019968E /* HUDHelper.swift in Sources */,
 			);
@@ -855,6 +895,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLmyApp/Utils(工具类)/LLPay",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,6 +924,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLmyApp/Utils(工具类)/LLPay",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = LinChen.LLmyApp;
