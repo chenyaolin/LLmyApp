@@ -16,7 +16,8 @@ def shared_pods
     pod 'HandyJSON', '~> 5.0.0-beta'
     pod 'Kingfisher'
     pod 'SnapKit'
-    pod 'FWPopupView'
+    pod 'UMCCommon', '~> 7.1.3'
+#    pod 'FWPopupView'
 end
 
 target 'LLmyApp' do

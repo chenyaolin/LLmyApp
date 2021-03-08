@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FWPopupView
+//import FWPopupView
 
 class LLEqualSpaceCollectionVc: UIViewController {
     
@@ -24,6 +24,7 @@ class LLEqualSpaceCollectionVc: UIViewController {
     }()
     
     private let myDatePicker = LLDatePickerView.loadFromNib()
+    private let testDatePicker = LLPickerView.loadFromNib()
     private var sourceTags = [TagModel]() // 数据源
 
     override func viewDidLoad() {
@@ -59,6 +60,17 @@ class LLEqualSpaceCollectionVc: UIViewController {
 
         popView.show()
     }
+    
+    func showDatePicker() {
+//        let picker = UIDatePicker(frame: CGRect(x: 0, y: 100, width: kAppWidth, height: 247))
+//        if #available(iOS 13.4, *) {
+//            picker.preferredDatePickerStyle = .compact
+//        } else {
+//        }
+//        picker.frame = CGRect(x: 0, y: 50, width: kAppWidth, height: 247)
+//        picker.datePickerMode = .dateAndTime
+        self.view.addSubview(testDatePicker)
+    }
 
 }
 
@@ -84,8 +96,8 @@ extension LLEqualSpaceCollectionVc: UICollectionViewDataSource, UICollectionView
 //        tipPopUpView.frame = UIScreen.main.bounds
 //        tipPopUpView.remark = "哈哈"
 //        tipPopUpView.show()
-        
-        pop()
+        showDatePicker()
+//        pop()
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

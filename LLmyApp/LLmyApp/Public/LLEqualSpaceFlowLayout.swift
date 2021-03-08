@@ -3,7 +3,7 @@
 //  LLmyApp
 //
 //  Created by 陈耀林 on 2021/1/20.
-//  Copyright © 2021 ManlyCamera. All rights reserved.
+//  Copyright © 2021 . All rights reserved.
 //
 
 import UIKit
@@ -28,6 +28,9 @@ class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
         super.prepare()
         
         guard let itemCount = collectionView?.numberOfItems(inSection: 0) else { return }
+        if itemAttributes.count > 0 {
+            itemAttributes.removeAll()
+        }
         
         var xOffset = sectionInset.left
         var yOffset = sectionInset.top
@@ -63,12 +66,9 @@ class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         super.layoutAttributesForElements(in: rect)
-        _ = itemAttributes.map({
-            if rect.contains($0.frame) && !itemAttributes.contains($0) {
-                itemAttributes.append($0)
-            }
-        })
-        return itemAttributes
+        return itemAttributes.filter { (test) -> Bool in
+            return rect.intersects(test.frame)
+        }
     }
     
     override var collectionViewContentSize: CGSize {

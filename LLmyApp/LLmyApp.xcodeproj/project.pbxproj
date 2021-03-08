@@ -52,6 +52,8 @@
 		87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AD21956D6900EB5438 /* Provider.swift */; };
 		87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */; };
 		87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4B22195933300EB5438 /* LLMainViewModel.swift */; };
+		8C4EA36B25CD2E0F0047D286 /* LLPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EA36A25CD2E0F0047D286 /* LLPickerView.swift */; };
+		8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C4EA36E25CD2E1E0047D286 /* LLPickerView.xib */; };
 		8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */; };
 		8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */; };
 		8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */; };
@@ -68,6 +70,10 @@
 		8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */; };
 		8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C954760254ABB7F00EF77C4 /* LLDBManager.swift */; };
 		8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */; };
+		8CB9786A25C0F9C200A6AFBB /* FWPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9786925C0F9C200A6AFBB /* FWPopupView.swift */; };
+		8CB9786E25C0FA1A00A6AFBB /* FWPopupSWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9786D25C0FA1A00A6AFBB /* FWPopupSWindow.swift */; };
+		8CB9787225C0FA4100A6AFBB /* FWPopupCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9787125C0FA4100A6AFBB /* FWPopupCategory.swift */; };
+		8CB9787625C0FA7100A6AFBB /* FWPopupRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9787525C0FA7100A6AFBB /* FWPopupRootViewController.swift */; };
 		8CD0EE0025BABF5500599EBC /* LLPayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EDFF25BABF5500599EBC /* LLPayUtils.swift */; };
 		8CD0EE0625BAC49900599EBC /* LLWXPayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE0525BAC49900599EBC /* LLWXPayModel.swift */; };
 		8CD0EE0F25BACBC100599EBC /* Decode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE0E25BACBC100599EBC /* Decode+.swift */; };
@@ -75,6 +81,7 @@
 		8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE2E25BACF4300599EBC /* libc++.tbd */; };
 		8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */; };
 		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
+		8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */; };
 		8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */; };
 		8CF07BBE25BFF53800CBC3BB /* CRTipPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
@@ -141,6 +148,8 @@
 		87DFF4AD21956D6900EB5438 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelableProtocol.swift; sourceTree = "<group>"; };
 		87DFF4B22195933300EB5438 /* LLMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewModel.swift; sourceTree = "<group>"; };
+		8C4EA36A25CD2E0F0047D286 /* LLPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPickerView.swift; sourceTree = "<group>"; };
+		8C4EA36E25CD2E1E0047D286 /* LLPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLPickerView.xib; sourceTree = "<group>"; };
 		8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceCollectionVc.swift; sourceTree = "<group>"; };
 		8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceCollectionCell.swift; sourceTree = "<group>"; };
 		8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LLEqualSpaceData.json; sourceTree = "<group>"; };
@@ -157,6 +166,10 @@
 		8C95475B254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fish+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		8C954760254ABB7F00EF77C4 /* LLDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBManager.swift; sourceTree = "<group>"; };
 		8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceFlowLayout.swift; sourceTree = "<group>"; };
+		8CB9786925C0F9C200A6AFBB /* FWPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupView.swift; sourceTree = "<group>"; };
+		8CB9786D25C0FA1A00A6AFBB /* FWPopupSWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupSWindow.swift; sourceTree = "<group>"; };
+		8CB9787125C0FA4100A6AFBB /* FWPopupCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupCategory.swift; sourceTree = "<group>"; };
+		8CB9787525C0FA7100A6AFBB /* FWPopupRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupRootViewController.swift; sourceTree = "<group>"; };
 		8CD0EDFF25BABF5500599EBC /* LLPayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayUtils.swift; sourceTree = "<group>"; };
 		8CD0EE0525BAC49900599EBC /* LLWXPayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLWXPayModel.swift; sourceTree = "<group>"; };
 		8CD0EE0925BAC61100599EBC /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -168,6 +181,8 @@
 		8CD0EE3225BACF6500599EBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayResult.swift; sourceTree = "<group>"; };
 		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
+		8CD963CD25F07A6E00B65E7E /* EqualSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualSpaceFlowLayout.h; sourceTree = "<group>"; };
+		8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualSpaceFlowLayout.m; sourceTree = "<group>"; };
 		8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRTipPopUpView.swift; sourceTree = "<group>"; };
 		8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRTipPopUpView.xib; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +231,7 @@
 		87168632219917D80019968E /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				8CB9786825C0F9AF00A6AFBB /* PopTool */,
 				8CD0EDFE25BAB91000599EBC /* LLPay */,
 				87168633219917E80019968E /* CRHUD */,
 				8716863C2199184D0019968E /* HUDHelper.swift */,
@@ -476,6 +492,8 @@
 				8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */,
 				8C5ABC8925B90E8700763628 /* LLEqualSpaceCollectionCell.swift */,
 				8C5ABC8D25B914B800763628 /* LLEqualSpaceData.json */,
+				8C4EA36A25CD2E0F0047D286 /* LLPickerView.swift */,
+				8C4EA36E25CD2E1E0047D286 /* LLPickerView.xib */,
 			);
 			path = iboss;
 			sourceTree = "<group>";
@@ -485,8 +503,21 @@
 			children = (
 				8C5ABC9825B9766400763628 /* DatePickView */,
 				8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */,
+				8CD963CD25F07A6E00B65E7E /* EqualSpaceFlowLayout.h */,
+				8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		8CB9786825C0F9AF00A6AFBB /* PopTool */ = {
+			isa = PBXGroup;
+			children = (
+				8CB9787525C0FA7100A6AFBB /* FWPopupRootViewController.swift */,
+				8CB9787125C0FA4100A6AFBB /* FWPopupCategory.swift */,
+				8CB9786D25C0FA1A00A6AFBB /* FWPopupSWindow.swift */,
+				8CB9786925C0F9C200A6AFBB /* FWPopupView.swift */,
+			);
+			path = PopTool;
 			sourceTree = "<group>";
 		};
 		8CD0EDFE25BAB91000599EBC /* LLPay */ = {
@@ -624,6 +655,7 @@
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
 				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
+				8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
 				8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */,
 				8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */,
@@ -670,7 +702,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		FACECF490B3C4128354FF704 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -702,13 +734,17 @@
 				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
 				8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */,
+				8CB9786A25C0F9C200A6AFBB /* FWPopupView.swift in Sources */,
+				8CB9787625C0FA7100A6AFBB /* FWPopupRootViewController.swift in Sources */,
 				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
 				87168635219918090019968E /* HUD.swift in Sources */,
+				8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */,
 				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
 				8716864521995D800019968E /* RandomString.swift in Sources */,
 				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
 				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
 				8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */,
+				8C4EA36B25CD2E0F0047D286 /* LLPickerView.swift in Sources */,
 				8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */,
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
 				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
@@ -723,6 +759,7 @@
 				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
 				8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */,
 				87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */,
+				8CB9786E25C0FA1A00A6AFBB /* FWPopupSWindow.swift in Sources */,
 				87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */,
 				871686392199182C0019968E /* CRHUDProgressView.swift in Sources */,
 				8C7841FD25C00FBB00697A0A /* LLPopView.swift in Sources */,
@@ -743,6 +780,7 @@
 				871686372199181F0019968E /* CRHUD.swift in Sources */,
 				87DF0B17219C206B00D479B0 /* LLHealthCardCell.swift in Sources */,
 				87168643219951220019968E /* GatewayHelper.swift in Sources */,
+				8CB9787225C0FA4100A6AFBB /* FWPopupCategory.swift in Sources */,
 				8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */,
 				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
 				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,

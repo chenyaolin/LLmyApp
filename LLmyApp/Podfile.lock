@@ -2,8 +2,6 @@ PODS:
   - Alamofire (5.2.1)
   - BBRTC (2.0.3):
     - Starscream (~> 3.0)
-  - FWPopupView (4.1.5):
-    - SnapKit
   - HandyJSON (5.0.0-beta.1)
   - Kingfisher (4.10.1)
   - Moya/Core (14.0.0):
@@ -23,7 +21,6 @@ PODS:
 
 DEPENDENCIES:
   - BBRTC (= 2.0.3)
-  - FWPopupView
   - HandyJSON (~> 5.0.0-beta)
   - Kingfisher
   - Moya/RxSwift (~> 14.0.0)
@@ -37,7 +34,6 @@ SPEC REPOS:
     - BBRTC
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
-    - FWPopupView
     - Moya
     - RxCocoa
     - RxRelay
@@ -52,7 +48,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   BBRTC: 428fe18ac756c4558e1fad019d2737a195ce33c0
-  FWPopupView: 367cc1aca505ca83e2dbe8567c52afdbdd916d8d
   HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -63,6 +58,6 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: 9d7914b20c0a18c8d3d43e640b3cf2e5d9a10f39
+PODFILE CHECKSUM: 1446908a7f3b8ef4804ee21e2f9e62cefaa7ba7b
 
 COCOAPODS: 1.10.1
