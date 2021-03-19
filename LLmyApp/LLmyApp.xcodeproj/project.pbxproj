@@ -80,6 +80,8 @@
 		8CD0EE1F25BACEB200599EBC /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE1E25BACEB200599EBC /* libWeChatSDK.a */; };
 		8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE2E25BACF4300599EBC /* libc++.tbd */; };
 		8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */; };
+		8CD2039C25F605490088497C /* ImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2039925F605490088497C /* ImageBrowserView.m */; };
+		8CD2039D25F605490088497C /* ZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2039A25F605490088497C /* ZoomingScrollView.m */; };
 		8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */; };
 		8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */; };
 		8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */; };
@@ -180,6 +182,10 @@
 		8CD0EE2E25BACF4300599EBC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		8CD0EE3225BACF6500599EBC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8CD0EE6125BAD57E00599EBC /* LLPayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayResult.swift; sourceTree = "<group>"; };
+		8CD2039825F605490088497C /* ImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserView.h; sourceTree = "<group>"; };
+		8CD2039925F605490088497C /* ImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserView.m; sourceTree = "<group>"; };
+		8CD2039A25F605490088497C /* ZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomingScrollView.m; sourceTree = "<group>"; };
+		8CD2039B25F605490088497C /* ZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomingScrollView.h; sourceTree = "<group>"; };
 		8CD6A3E2254976D7005D76A9 /* LLDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBViewController.swift; sourceTree = "<group>"; };
 		8CD963CD25F07A6E00B65E7E /* EqualSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualSpaceFlowLayout.h; sourceTree = "<group>"; };
 		8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualSpaceFlowLayout.m; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 		87168632219917D80019968E /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				8CD2039725F604100088497C /* LLPhotoBroswer */,
 				8CB9786825C0F9AF00A6AFBB /* PopTool */,
 				8CD0EDFE25BAB91000599EBC /* LLPay */,
 				87168633219917E80019968E /* CRHUD */,
@@ -534,6 +541,17 @@
 			path = LLPay;
 			sourceTree = "<group>";
 		};
+		8CD2039725F604100088497C /* LLPhotoBroswer */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2039825F605490088497C /* ImageBrowserView.h */,
+				8CD2039925F605490088497C /* ImageBrowserView.m */,
+				8CD2039B25F605490088497C /* ZoomingScrollView.h */,
+				8CD2039A25F605490088497C /* ZoomingScrollView.m */,
+			);
+			path = LLPhotoBroswer;
+			sourceTree = "<group>";
+		};
 		8CD6A3E12549763A005D76A9 /* DB(数据库) */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,10 +769,12 @@
 				8C5ABC8A25B90E8700763628 /* LLEqualSpaceCollectionCell.swift in Sources */,
 				8CD0EE0625BAC49900599EBC /* LLWXPayModel.swift in Sources */,
 				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
+				8CD2039C25F605490088497C /* ImageBrowserView.m in Sources */,
 				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
 				8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */,
 				87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */,
+				8CD2039D25F605490088497C /* ZoomingScrollView.m in Sources */,
 				8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */,
 				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
 				8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */,

@@ -15,8 +15,9 @@ def shared_pods
     pod 'SwiftLint'
     pod 'HandyJSON', '~> 5.0.0-beta'
     pod 'Kingfisher'
+    pod 'SDWebImage'
     pod 'SnapKit'
-    pod 'UMCCommon', '~> 7.1.3'
+#    pod 'MWPhotoBrowser' #图片浏览器
 #    pod 'FWPopupView'
 end
 

@@ -71,6 +71,17 @@ class LLEqualSpaceCollectionVc: UIViewController {
 //        picker.datePickerMode = .dateAndTime
         self.view.addSubview(testDatePicker)
     }
+    
+    func showPhotoBroswer() {
+        let image1 =  "https://car.autohome.com.cn/photo/series/13452/1/1617513.html?pvareaid=101121"
+//        let image2 = "http://test-upload.carisok.com/uploads/files/20190105/1546652896WDQhVP.jpeg"
+//        let image3 = "http://test-upload.carisok.com/uploads/files/20200508/1588922419lKgADt.jpeg"
+//        let image4 = "http://test-upload.carisok.com/uploads/files/20190105/1546652896WDQhVP.jpeg"
+//        let image5 = "http://test-upload.carisok.com/uploads/files/20200508/1588922419lKgADt.jpeg"
+        let images = [image1]
+        let ibv = ImageBrowserView(imagesArray: images, defaultSelect: 0)
+        ibv?.show()
+    }
 
 }
 
@@ -96,7 +107,8 @@ extension LLEqualSpaceCollectionVc: UICollectionViewDataSource, UICollectionView
 //        tipPopUpView.frame = UIScreen.main.bounds
 //        tipPopUpView.remark = "哈哈"
 //        tipPopUpView.show()
-        showDatePicker()
+//        showDatePicker()
+        showPhotoBroswer()
 //        pop()
     }
     
