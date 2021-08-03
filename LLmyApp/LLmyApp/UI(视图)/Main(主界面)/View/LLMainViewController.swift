@@ -37,7 +37,8 @@ class LLMainViewController: UIViewController {
         button.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
 //            self?.viewModel.getAdvertisement()
 //            let vc = LLHealthCardViewController()
-            let vc = LLEqualSpaceCollectionVc()
+//            let vc = LLEqualSpaceCollectionVc()
+            let vc = LLChartsViewController()
 //            let vc = LLCoreDataViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
             

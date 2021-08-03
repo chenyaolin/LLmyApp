@@ -32,6 +32,8 @@
 		87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB310D21941CCA00B330EA /* BaseNavigationController.swift */; };
 		87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB3111219441D000B330EA /* LLMainViewController.swift */; };
 		87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB3113219441DF00B330EA /* LLMainUI.storyboard */; };
+		87CB647A26B94D8F00EE9F83 /* LLChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CB647826B94D8F00EE9F83 /* LLChartsViewController.swift */; };
+		87CB647B26B94D8F00EE9F83 /* LLChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87CB647926B94D8F00EE9F83 /* LLChartsViewController.xib */; };
 		87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B06219C15BD00D479B0 /* LLHealthCardViewController.swift */; };
 		87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DF0B07219C15BD00D479B0 /* LLHealthCardViewController.xib */; };
 		87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DF0B0B219C16B700D479B0 /* LLHealthCardViewModel.swift */; };
@@ -130,6 +132,8 @@
 		87AB310D21941CCA00B330EA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		87AB3111219441D000B330EA /* LLMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewController.swift; sourceTree = "<group>"; };
 		87AB3113219441DF00B330EA /* LLMainUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LLMainUI.storyboard; sourceTree = "<group>"; };
+		87CB647826B94D8F00EE9F83 /* LLChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLChartsViewController.swift; sourceTree = "<group>"; };
+		87CB647926B94D8F00EE9F83 /* LLChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLChartsViewController.xib; sourceTree = "<group>"; };
 		87DF0B06219C15BD00D479B0 /* LLHealthCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardViewController.swift; sourceTree = "<group>"; };
 		87DF0B07219C15BD00D479B0 /* LLHealthCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLHealthCardViewController.xib; sourceTree = "<group>"; };
 		87DF0B0B219C16B700D479B0 /* LLHealthCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLHealthCardViewModel.swift; sourceTree = "<group>"; };
@@ -326,6 +330,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				87CB647726B94D5500EE9F83 /* lineCharts(图表) */,
 				8CA2A93D25B81F2400FE0615 /* iboss */,
 				8CD6A3E12549763A005D76A9 /* DB(数据库) */,
 				87DF0B04219C158A00D479B0 /* 健康卡 */,
@@ -394,6 +399,15 @@
 				87DFF49C2195205E00EB5438 /* View */,
 			);
 			path = "Main(主界面)";
+			sourceTree = "<group>";
+		};
+		87CB647726B94D5500EE9F83 /* lineCharts(图表) */ = {
+			isa = PBXGroup;
+			children = (
+				87CB647826B94D8F00EE9F83 /* LLChartsViewController.swift */,
+				87CB647926B94D8F00EE9F83 /* LLChartsViewController.xib */,
+			);
+			path = "lineCharts(图表)";
 			sourceTree = "<group>";
 		};
 		87DF0B04219C158A00D479B0 /* 健康卡 */ = {
@@ -668,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF07BBE25BFF53800CBC3BB /* CRTipPopUpView.xib in Resources */,
+				87CB647B26B94D8F00EE9F83 /* LLChartsViewController.xib in Resources */,
 				8748487D2394E11D0041F3CB /* Bundle in Resources */,
 				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
@@ -807,6 +822,7 @@
 				8CD0EE0025BABF5500599EBC /* LLPayUtils.swift in Sources */,
 				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
 				8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */,
+				87CB647A26B94D8F00EE9F83 /* LLChartsViewController.swift in Sources */,
 				87DF0B21219C2D0A00D479B0 /* Obserable+UITableView.swift in Sources */,
 				8CD0EE0F25BACBC100599EBC /* Decode+.swift in Sources */,
 				87AB310821941AB500B330EA /* LLTabBarViewController.swift in Sources */,
@@ -895,7 +911,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -949,7 +965,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

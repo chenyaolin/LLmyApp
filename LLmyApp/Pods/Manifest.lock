@@ -1,7 +1,10 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (5.2.2)
   - BBRTC (2.0.3):
     - Starscream (~> 3.0)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - HandyJSON (5.0.0-beta.1)
   - Kingfisher (4.10.1)
   - Moya/Core (14.0.0):
@@ -24,11 +27,12 @@ PODS:
 
 DEPENDENCIES:
   - BBRTC (= 2.0.3)
+  - Charts
   - HandyJSON (~> 5.0.0-beta)
   - Kingfisher
-  - Moya/RxSwift (~> 14.0.0)
-  - RxCocoa (= 5.1.1)
-  - RxSwift (= 5.1.1)
+  - Moya/RxSwift
+  - RxCocoa
+  - RxSwift
   - SDWebImage
   - SnapKit
   - SwiftLint
@@ -38,6 +42,7 @@ SPEC REPOS:
     - BBRTC
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
+    - Charts
     - Moya
     - RxCocoa
     - RxRelay
@@ -51,8 +56,9 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   BBRTC: 428fe18ac756c4558e1fad019d2737a195ce33c0
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -64,6 +70,6 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: 4ba2d9a2edb7bb57ff023371bea5e12cda29e6b6
+PODFILE CHECKSUM: a202168ec36d8ac797a6e7103c6419c8921df896
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.3
