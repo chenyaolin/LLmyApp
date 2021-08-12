@@ -19,6 +19,7 @@
 		8716864521995D800019968E /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716864421995D800019968E /* RandomString.swift */; };
 		87168648219961470019968E /* LLOCbridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87168647219961470019968E /* LLOCbridge.m */; };
 		8748487D2394E11D0041F3CB /* Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8748487C2394E11D0041F3CB /* Bundle */; };
+		878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A861826BA36EB000A3EE8 /* LLMarkView.swift */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
 		87AB30E321940BD100B330EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E221940BD100B330EA /* Assets.xcassets */; };
 		87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E421940BD100B330EA /* LaunchScreen.storyboard */; };
@@ -115,6 +116,7 @@
 		87168646219961460019968E /* LLmyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLmyApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		87168647219961470019968E /* LLOCbridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOCbridge.m; sourceTree = "<group>"; };
 		8748487C2394E11D0041F3CB /* Bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bundle; sourceTree = "<group>"; };
+		878A861826BA36EB000A3EE8 /* LLMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMarkView.swift; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30DB21940BD000B330EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87AB30E221940BD100B330EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 			children = (
 				87CB647826B94D8F00EE9F83 /* LLChartsViewController.swift */,
 				87CB647926B94D8F00EE9F83 /* LLChartsViewController.xib */,
+				878A861826BA36EB000A3EE8 /* LLMarkView.swift */,
 			);
 			path = "lineCharts(图表)";
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
 				8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */,
+				878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */,
 				8CB9786A25C0F9C200A6AFBB /* FWPopupView.swift in Sources */,
 				8CB9787625C0FA7100A6AFBB /* FWPopupRootViewController.swift in Sources */,
 				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
@@ -984,7 +988,7 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1014,7 +1018,7 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
