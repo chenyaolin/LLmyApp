@@ -22,6 +22,7 @@ def shared_pods
     pod 'SnapKit'
     # 图表
     pod 'Charts'
+    pod 'AXKit'
 #    pod 'MWPhotoBrowser' #图片浏览器
 #    pod 'FWPopupView'
 end
