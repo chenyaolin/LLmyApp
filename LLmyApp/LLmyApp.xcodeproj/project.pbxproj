@@ -18,6 +18,7 @@
 		87168643219951220019968E /* GatewayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168642219951220019968E /* GatewayHelper.swift */; };
 		8716864521995D800019968E /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716864421995D800019968E /* RandomString.swift */; };
 		87168648219961470019968E /* LLOCbridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87168647219961470019968E /* LLOCbridge.m */; };
+		8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */; };
 		8748487D2394E11D0041F3CB /* Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8748487C2394E11D0041F3CB /* Bundle */; };
 		878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A861826BA36EB000A3EE8 /* LLMarkView.swift */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
@@ -115,6 +116,7 @@
 		8716864421995D800019968E /* RandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomString.swift; sourceTree = "<group>"; };
 		87168646219961460019968E /* LLmyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLmyApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		87168647219961470019968E /* LLOCbridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOCbridge.m; sourceTree = "<group>"; };
+		8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAlerSheetView.swift; sourceTree = "<group>"; };
 		8748487C2394E11D0041F3CB /* Bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bundle; sourceTree = "<group>"; };
 		878A861826BA36EB000A3EE8 /* LLMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMarkView.swift; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +267,14 @@
 				8716863A219918390019968E /* CRHUDLabelView.swift */,
 			);
 			path = CRHUD;
+			sourceTree = "<group>";
+		};
+		8733C01F27116C8200FED3E4 /* CustomAlerSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */,
+			);
+			path = CustomAlerSheet;
 			sourceTree = "<group>";
 		};
 		8748487E2394E1500041F3CB /* Resources */ = {
@@ -525,6 +535,7 @@
 		8CA2A93E25B81F4600FE0615 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				8733C01F27116C8200FED3E4 /* CustomAlerSheet */,
 				8C5ABC9825B9766400763628 /* DatePickView */,
 				8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */,
 				8CD963CD25F07A6E00B65E7E /* EqualSpaceFlowLayout.h */,
@@ -810,6 +821,7 @@
 				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
 				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
 				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
+				8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */,
 				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
 				8C5ABC9425B9199900763628 /* LLUtils.swift in Sources */,
 				8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */,
