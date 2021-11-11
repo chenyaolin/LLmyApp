@@ -199,6 +199,7 @@ fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AXKit/AXKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework"
   install_framework "${PODS_ROOT}/BBRTC/Products/BBRTC/BBRTC.framework"
   install_framework "${PODS_ROOT}/BBRTC/Products/WebRTC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
@@ -215,6 +216,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AXKit/AXKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework"
   install_framework "${PODS_ROOT}/BBRTC/Products/BBRTC/BBRTC.framework"
   install_framework "${PODS_ROOT}/BBRTC/Products/WebRTC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"

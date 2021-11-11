@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
+  - AliyunOSSiOS (2.10.8)
   - AXKit (0.3.11)
   - BBRTC (2.0.3):
     - Starscream (~> 3.0)
@@ -27,6 +28,7 @@ PODS:
   - SwiftLint (0.32.0)
 
 DEPENDENCIES:
+  - AliyunOSSiOS
   - AXKit
   - BBRTC (= 2.0.3)
   - Charts
@@ -44,6 +46,7 @@ SPEC REPOS:
     - BBRTC
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
+    - AliyunOSSiOS
     - AXKit
     - Charts
     - Moya
@@ -60,6 +63,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
   AXKit: 0125a56417185e07d41136463e12bd1c598eeb42
   BBRTC: 428fe18ac756c4558e1fad019d2737a195ce33c0
   Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
@@ -74,6 +78,6 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: 70fe51b7d7afc803077724cc42839b596806e592
+PODFILE CHECKSUM: 8e7919d04d9064521a95d2fe0da001fe115751d0
 
 COCOAPODS: 1.9.3

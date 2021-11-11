@@ -18,9 +18,14 @@
 		87168643219951220019968E /* GatewayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87168642219951220019968E /* GatewayHelper.swift */; };
 		8716864521995D800019968E /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716864421995D800019968E /* RandomString.swift */; };
 		87168648219961470019968E /* LLOCbridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 87168647219961470019968E /* LLOCbridge.m */; };
+		87193EDB27211D7E0020D002 /* FRVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87193EDA27211D7E0020D002 /* FRVideoPlayerView.swift */; };
+		87193EE027211F030020D002 /* LLVideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87193EDF27211F030020D002 /* LLVideoPlayViewController.swift */; };
+		87193EE4272121290020D002 /* 老照片.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87193EE3272121290020D002 /* 老照片.mp4 */; };
+		87193EE82721220E0020D002 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87193EE72721220E0020D002 /* VideoPlayViewController.swift */; };
 		8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */; };
 		8748487D2394E11D0041F3CB /* Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8748487C2394E11D0041F3CB /* Bundle */; };
 		878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A861826BA36EB000A3EE8 /* LLMarkView.swift */; };
+		87AB304B271FCDF60063DC9B /* LLOssHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB304A271FCDF60063DC9B /* LLOssHelper.swift */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
 		87AB30E321940BD100B330EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E221940BD100B330EA /* Assets.xcassets */; };
 		87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AB30E421940BD100B330EA /* LaunchScreen.storyboard */; };
@@ -116,9 +121,14 @@
 		8716864421995D800019968E /* RandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomString.swift; sourceTree = "<group>"; };
 		87168646219961460019968E /* LLmyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLmyApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		87168647219961470019968E /* LLOCbridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOCbridge.m; sourceTree = "<group>"; };
+		87193EDA27211D7E0020D002 /* FRVideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRVideoPlayerView.swift; sourceTree = "<group>"; };
+		87193EDF27211F030020D002 /* LLVideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLVideoPlayViewController.swift; sourceTree = "<group>"; };
+		87193EE3272121290020D002 /* 老照片.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "老照片.mp4"; sourceTree = "<group>"; };
+		87193EE72721220E0020D002 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
 		8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAlerSheetView.swift; sourceTree = "<group>"; };
 		8748487C2394E11D0041F3CB /* Bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bundle; sourceTree = "<group>"; };
 		878A861826BA36EB000A3EE8 /* LLMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMarkView.swift; sourceTree = "<group>"; };
+		87AB304A271FCDF60063DC9B /* LLOssHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLOssHelper.swift; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AB30DB21940BD000B330EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87AB30E221940BD100B330EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -245,6 +255,7 @@
 		87168632219917D80019968E /* Utils(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				87AB3049271FCDB20063DC9B /* OSS */,
 				8CD2039725F604100088497C /* LLPhotoBroswer */,
 				8CB9786825C0F9AF00A6AFBB /* PopTool */,
 				8CD0EDFE25BAB91000599EBC /* LLPay */,
@@ -269,6 +280,24 @@
 			path = CRHUD;
 			sourceTree = "<group>";
 		};
+		87193ED927211D490020D002 /* VideoPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				87193EDA27211D7E0020D002 /* FRVideoPlayerView.swift */,
+			);
+			path = VideoPlayView;
+			sourceTree = "<group>";
+		};
+		87193EDE27211ED00020D002 /* VideoPlay(视频播放) */ = {
+			isa = PBXGroup;
+			children = (
+				87193EE3272121290020D002 /* 老照片.mp4 */,
+				87193EDF27211F030020D002 /* LLVideoPlayViewController.swift */,
+				87193EE72721220E0020D002 /* VideoPlayViewController.swift */,
+			);
+			path = "VideoPlay(视频播放)";
+			sourceTree = "<group>";
+		};
 		8733C01F27116C8200FED3E4 /* CustomAlerSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +312,14 @@
 				8748487C2394E11D0041F3CB /* Bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		87AB3049271FCDB20063DC9B /* OSS */ = {
+			isa = PBXGroup;
+			children = (
+				87AB304A271FCDF60063DC9B /* LLOssHelper.swift */,
+			);
+			path = OSS;
 			sourceTree = "<group>";
 		};
 		87AB30CF21940BD000B330EA = {
@@ -342,6 +379,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				87193EDE27211ED00020D002 /* VideoPlay(视频播放) */,
 				87CB647726B94D5500EE9F83 /* lineCharts(图表) */,
 				8CA2A93D25B81F2400FE0615 /* iboss */,
 				8CD6A3E12549763A005D76A9 /* DB(数据库) */,
@@ -535,6 +573,7 @@
 		8CA2A93E25B81F4600FE0615 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				87193ED927211D490020D002 /* VideoPlayView */,
 				8733C01F27116C8200FED3E4 /* CustomAlerSheet */,
 				8C5ABC9825B9766400763628 /* DatePickView */,
 				8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */,
@@ -700,6 +739,7 @@
 				8748487D2394E11D0041F3CB /* Bundle in Resources */,
 				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
+				87193EE4272121290020D002 /* 老照片.mp4 in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
 				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
 				8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */,
@@ -777,8 +817,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5ABC9A25B9770A00763628 /* LLDatePickerView.swift in Sources */,
+				87AB304B271FCDF60063DC9B /* LLOssHelper.swift in Sources */,
 				87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */,
 				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
+				87193EE027211F030020D002 /* LLVideoPlayViewController.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
 				8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */,
 				878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */,
@@ -787,6 +829,7 @@
 				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
 				87168635219918090019968E /* HUD.swift in Sources */,
 				8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */,
+				87193EE82721220E0020D002 /* VideoPlayViewController.swift in Sources */,
 				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
 				8716864521995D800019968E /* RandomString.swift in Sources */,
 				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
@@ -823,6 +866,7 @@
 				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
 				8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */,
 				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
+				87193EDB27211D7E0020D002 /* FRVideoPlayerView.swift in Sources */,
 				8C5ABC9425B9199900763628 /* LLUtils.swift in Sources */,
 				8CD0EE6225BAD57E00599EBC /* LLPayResult.swift in Sources */,
 				87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */,

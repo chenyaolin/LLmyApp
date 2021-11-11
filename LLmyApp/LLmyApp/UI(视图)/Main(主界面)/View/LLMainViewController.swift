@@ -38,8 +38,11 @@ class LLMainViewController: UIViewController {
 //            self?.viewModel.getAdvertisement()
 //            let vc = LLHealthCardViewController()
 //            let vc = LLEqualSpaceCollectionVc()
-            let vc = LLChartsViewController()
+//            let vc = LLChartsViewController()
 //            let vc = LLCoreDataViewController()
+//            let vc = LLVideoPlayViewController()
+            let vc = VideoPlayViewController()
+            vc.hidesBottomBarWhenPushed = true
             self?.navigationController?.pushViewController(vc, animated: true)
             
             }.disposed(by: disposeBag)

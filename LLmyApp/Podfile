@@ -25,6 +25,7 @@ def shared_pods
     pod 'AXKit'
 #    pod 'MWPhotoBrowser' #图片浏览器
 #    pod 'FWPopupView'
+    pod 'AliyunOSSiOS'
 end
 
 target 'LLmyApp' do
