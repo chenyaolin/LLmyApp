@@ -17,6 +17,7 @@ class LLMainViewController: UIViewController {
     let disposeBag = DisposeBag()
     let viewModel = LLMainViewModel()
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var secondBtn: UIButton!
     
     lazy var loadingView: UIView = {
         let view = UIView(frame: kMainBounds)
@@ -52,6 +53,14 @@ class LLMainViewController: UIViewController {
 //        #else
 //        print("生产")
 //        #endif
+        
+        secondBtn.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
+//            let vc = LLScrollViewController()
+            let vc = LLPopoVerViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self?.navigationController?.pushViewController(vc, animated: true)
+            
+            }.disposed(by: disposeBag)
         
     }
     

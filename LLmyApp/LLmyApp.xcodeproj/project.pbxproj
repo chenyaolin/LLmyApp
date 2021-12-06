@@ -23,7 +23,11 @@
 		87193EE4272121290020D002 /* 老照片.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 87193EE3272121290020D002 /* 老照片.mp4 */; };
 		87193EE82721220E0020D002 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87193EE72721220E0020D002 /* VideoPlayViewController.swift */; };
 		8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */; };
+		8742810A27449F5E005A458E /* LLScrollViewDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8742810827449F5E005A458E /* LLScrollViewDemoCell.swift */; };
+		8742810B27449F5E005A458E /* LLScrollViewDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8742810927449F5E005A458E /* LLScrollViewDemoCell.xib */; };
 		8748487D2394E11D0041F3CB /* Bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8748487C2394E11D0041F3CB /* Bundle */; };
+		875A6A002759F91F00BFD2C4 /* LLBookPlayPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875A69FF2759F91F00BFD2C4 /* LLBookPlayPopView.swift */; };
+		876FB97E27587FB90037DB50 /* LLPopoVerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FB97D27587FB90037DB50 /* LLPopoVerViewController.swift */; };
 		878A861926BA36EB000A3EE8 /* LLMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A861826BA36EB000A3EE8 /* LLMarkView.swift */; };
 		87AB304B271FCDF60063DC9B /* LLOssHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB304A271FCDF60063DC9B /* LLOssHelper.swift */; };
 		87AB30DC21940BD000B330EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB30DB21940BD000B330EA /* AppDelegate.swift */; };
@@ -61,6 +65,7 @@
 		87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AD21956D6900EB5438 /* Provider.swift */; };
 		87DFF4B021957D9500EB5438 /* ModelableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */; };
 		87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFF4B22195933300EB5438 /* LLMainViewModel.swift */; };
+		87EF0E922743B09800A14AC3 /* LLScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF0E912743B09800A14AC3 /* LLScrollViewController.swift */; };
 		8C4EA36B25CD2E0F0047D286 /* LLPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EA36A25CD2E0F0047D286 /* LLPickerView.swift */; };
 		8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C4EA36E25CD2E1E0047D286 /* LLPickerView.xib */; };
 		8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */; };
@@ -126,7 +131,11 @@
 		87193EE3272121290020D002 /* 老照片.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "老照片.mp4"; sourceTree = "<group>"; };
 		87193EE72721220E0020D002 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
 		8733C02027117A0500FED3E4 /* LLAlerSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAlerSheetView.swift; sourceTree = "<group>"; };
+		8742810827449F5E005A458E /* LLScrollViewDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLScrollViewDemoCell.swift; sourceTree = "<group>"; };
+		8742810927449F5E005A458E /* LLScrollViewDemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLScrollViewDemoCell.xib; sourceTree = "<group>"; };
 		8748487C2394E11D0041F3CB /* Bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bundle; sourceTree = "<group>"; };
+		875A69FF2759F91F00BFD2C4 /* LLBookPlayPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLBookPlayPopView.swift; sourceTree = "<group>"; };
+		876FB97D27587FB90037DB50 /* LLPopoVerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPopoVerViewController.swift; sourceTree = "<group>"; };
 		878A861826BA36EB000A3EE8 /* LLMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMarkView.swift; sourceTree = "<group>"; };
 		87AB304A271FCDF60063DC9B /* LLOssHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLOssHelper.swift; sourceTree = "<group>"; };
 		87AB30D821940BD000B330EA /* LLmyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLmyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +177,7 @@
 		87DFF4AD21956D6900EB5438 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		87DFF4AF21957D9500EB5438 /* ModelableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelableProtocol.swift; sourceTree = "<group>"; };
 		87DFF4B22195933300EB5438 /* LLMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainViewModel.swift; sourceTree = "<group>"; };
+		87EF0E912743B09800A14AC3 /* LLScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLScrollViewController.swift; sourceTree = "<group>"; };
 		8C4EA36A25CD2E0F0047D286 /* LLPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPickerView.swift; sourceTree = "<group>"; };
 		8C4EA36E25CD2E1E0047D286 /* LLPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLPickerView.xib; sourceTree = "<group>"; };
 		8C5ABC8525B90A9C00763628 /* LLEqualSpaceCollectionVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLEqualSpaceCollectionVc.swift; sourceTree = "<group>"; };
@@ -314,6 +324,30 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		875A69FD2759F5DD00BFD2C4 /* BookPlay(书戏英语) */ = {
+			isa = PBXGroup;
+			children = (
+				875A69FE2759F86A00BFD2C4 /* Pop */,
+			);
+			path = "BookPlay(书戏英语)";
+			sourceTree = "<group>";
+		};
+		875A69FE2759F86A00BFD2C4 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				875A69FF2759F91F00BFD2C4 /* LLBookPlayPopView.swift */,
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
+		876FB97C27587F610037DB50 /* PopoverDemo(demo) */ = {
+			isa = PBXGroup;
+			children = (
+				876FB97D27587FB90037DB50 /* LLPopoVerViewController.swift */,
+			);
+			path = "PopoverDemo(demo)";
+			sourceTree = "<group>";
+		};
 		87AB3049271FCDB20063DC9B /* OSS */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +413,9 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				875A69FD2759F5DD00BFD2C4 /* BookPlay(书戏英语) */,
+				876FB97C27587F610037DB50 /* PopoverDemo(demo) */,
+				87EF0E902743B02100A14AC3 /* ScrollviewDemo(demo) */,
 				87193EDE27211ED00020D002 /* VideoPlay(视频播放) */,
 				87CB647726B94D5500EE9F83 /* lineCharts(图表) */,
 				8CA2A93D25B81F2400FE0615 /* iboss */,
@@ -532,6 +569,16 @@
 				87DFF4B22195933300EB5438 /* LLMainViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87EF0E902743B02100A14AC3 /* ScrollviewDemo(demo) */ = {
+			isa = PBXGroup;
+			children = (
+				87EF0E912743B09800A14AC3 /* LLScrollViewController.swift */,
+				8742810827449F5E005A458E /* LLScrollViewDemoCell.swift */,
+				8742810927449F5E005A458E /* LLScrollViewDemoCell.xib */,
+			);
+			path = "ScrollviewDemo(demo)";
 			sourceTree = "<group>";
 		};
 		8C5ABC9825B9766400763628 /* DatePickView */ = {
@@ -741,6 +788,7 @@
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
 				87193EE4272121290020D002 /* 老照片.mp4 in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
+				8742810B27449F5E005A458E /* LLScrollViewDemoCell.xib in Resources */,
 				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
 				8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
@@ -832,6 +880,7 @@
 				87193EE82721220E0020D002 /* VideoPlayViewController.swift in Sources */,
 				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
 				8716864521995D800019968E /* RandomString.swift in Sources */,
+				876FB97E27587FB90037DB50 /* LLPopoVerViewController.swift in Sources */,
 				87DFF4A3219522D400EB5438 /* LLMainApi.swift in Sources */,
 				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
 				8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */,
@@ -843,6 +892,7 @@
 				8CD0EE0625BAC49900599EBC /* LLWXPayModel.swift in Sources */,
 				87DF0B0E219C178F00D479B0 /* RxSwift+Operator.swift in Sources */,
 				8CD2039C25F605490088497C /* ImageBrowserView.m in Sources */,
+				8742810A27449F5E005A458E /* LLScrollViewDemoCell.swift in Sources */,
 				87DFF4A8219539CC00EB5438 /* LLMainBanner.swift in Sources */,
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
 				8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */,
@@ -852,6 +902,7 @@
 				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
 				8C90ECBC254BF340000670F4 /* LLCoreDataViewController.swift in Sources */,
 				87DFF49F2195208E00EB5438 /* LLMainService.swift in Sources */,
+				875A6A002759F91F00BFD2C4 /* LLBookPlayPopView.swift in Sources */,
 				8CB9786E25C0FA1A00A6AFBB /* FWPopupSWindow.swift in Sources */,
 				87DF0B10219C18EF00D479B0 /* ReusableViewProtocal.swift in Sources */,
 				871686392199182C0019968E /* CRHUDProgressView.swift in Sources */,
@@ -861,6 +912,7 @@
 				87DF0B1D219C22DD00D479B0 /* LLHealthCardService.swift in Sources */,
 				87DF0B1A219C21A400D479B0 /* LLHealthCardModel.swift in Sources */,
 				87168648219961470019968E /* LLOCbridge.m in Sources */,
+				87EF0E922743B09800A14AC3 /* LLScrollViewController.swift in Sources */,
 				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
 				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
 				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
@@ -1060,7 +1112,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "LLmyApp/Other(其它)/LLmyApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1088,7 +1140,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LLmyApp/Other(其它)/LLmyApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

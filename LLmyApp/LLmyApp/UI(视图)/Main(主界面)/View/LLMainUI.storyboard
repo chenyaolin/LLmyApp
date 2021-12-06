@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWU-v4-Irs">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWU-v4-Irs">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,20 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-nh-Zhe">
-                                <rect key="frame" x="164.5" y="318" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-nh-Zhe">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3A-gN-vvG">
+                                <rect key="frame" x="164.5" y="395" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mp0-Hw-cqR"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RLh-nh-Zhe" firstAttribute="centerY" secondItem="2y0-Vu-wRY" secondAttribute="centerY" id="4Yo-9P-Jlo"/>
+                            <constraint firstItem="R3A-gN-vvG" firstAttribute="top" secondItem="RLh-nh-Zhe" secondAttribute="bottom" constant="46.5" id="6EE-0Q-mjz"/>
                             <constraint firstItem="RLh-nh-Zhe" firstAttribute="centerX" secondItem="2y0-Vu-wRY" secondAttribute="centerX" id="JWm-h1-he7"/>
+                            <constraint firstItem="R3A-gN-vvG" firstAttribute="centerX" secondItem="2y0-Vu-wRY" secondAttribute="centerX" id="OwA-dG-atI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Mp0-Hw-cqR"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="RLh-nh-Zhe" id="L5V-t9-p3p"/>
+                        <outlet property="secondBtn" destination="R3A-gN-vvG" id="8pg-NO-xHm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJc-j5-h3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
