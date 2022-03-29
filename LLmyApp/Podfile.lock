@@ -1,31 +1,31 @@
 PODS:
-  - Alamofire (5.2.2)
-  - AliyunOSSiOS (2.10.8)
+  - Alamofire (5.5.0)
+  - AliyunOSSiOS (2.10.13)
   - AXKit (0.3.11)
   - BBRTC (2.0.3):
     - Starscream (~> 3.0)
-  - Charts (3.5.0):
-    - Charts/Core (= 3.5.0)
-  - Charts/Core (3.5.0)
-  - HandyJSON (5.0.0-beta.1)
-  - Kingfisher (4.10.1)
-  - Moya/Core (14.0.0):
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - HandyJSON (5.0.4-beta)
+  - Kingfisher (6.3.1)
+  - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
-  - Moya/RxSwift (14.0.0):
+  - Moya/RxSwift (15.0.0):
     - Moya/Core
-    - RxSwift (~> 5.0)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
-  - SDWebImage (5.8.0):
-    - SDWebImage/Core (= 5.8.0)
-  - SDWebImage/Core (5.8.0)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
   - SnapKit (5.0.1)
   - Starscream (3.1.1)
-  - SwiftLint (0.32.0)
+  - SwiftLint (0.47.0)
 
 DEPENDENCIES:
   - AliyunOSSiOS
@@ -42,13 +42,15 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/chenyaolin/LLSpecs.git:
+  https://github.com/chenyaolin/LLSpecs:
     - BBRTC
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - AliyunOSSiOS
     - AXKit
     - Charts
+    - HandyJSON
+    - Kingfisher
     - Moya
     - RxCocoa
     - RxRelay
@@ -56,28 +58,25 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - Starscream
-  trunk:
-    - HandyJSON
-    - Kingfisher
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  AliyunOSSiOS: 8db92936545593b9e5c66d680ef2ac0738946651
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  AliyunOSSiOS: 8469b21f375813e0da340d63cbae1dadbfb0f0bf
   AXKit: 0125a56417185e07d41136463e12bd1c598eeb42
   BBRTC: 428fe18ac756c4558e1fad019d2737a195ce33c0
-  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
-  HandyJSON: 582477127ab3ab65bd2e471815f1a7b846856978
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
-  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  HandyJSON: a9c67202df97805a0ba4a00e30b50e9a30ac28f3
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
-  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
 PODFILE CHECKSUM: 8e7919d04d9064521a95d2fe0da001fe115751d0
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

@@ -60,7 +60,6 @@
 #import "OSSReachability.h"
 #import "OSSIPv6Adapter.h"
 #import "OSSIPv6PrefixResolver.h"
-#import "OSSReachabilityManager.h"
 
 FOUNDATION_EXPORT double AliyunOSSiOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char AliyunOSSiOSVersionString[];

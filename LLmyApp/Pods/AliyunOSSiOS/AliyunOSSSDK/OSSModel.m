@@ -296,6 +296,10 @@ NSString * const BACKGROUND_SESSION_IDENTIFIER = @"com.aliyun.oss.backgroundsess
         self.backgroundSesseionIdentifier = BACKGROUND_SESSION_IDENTIFIER;
         self.timeoutIntervalForRequest = OSSDefaultTimeoutForRequestInSecond;
         self.timeoutIntervalForResource = OSSDefaultTimeoutForResourceInSecond;
+        self.isPathStyleAccessEnable = NO;
+        self.isCustomPathPrefixEnable = NO;
+        self.cnameExcludeList = @[];
+        self.isAllowUACarrySystemInfo = YES;
     }
     return self;
 }
@@ -472,9 +476,13 @@ NSString * const BACKGROUND_SESSION_IDENTIFIER = @"com.aliyun.oss.backgroundsess
     dispatch_once(&once, ^{
         NSString *localeIdentifier = [[NSLocale currentLocale] localeIdentifier];
 #if TARGET_OS_IOS
-        NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-        NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
-        userAgent = [NSString stringWithFormat:@"%@/%@(/%@/%@/%@)", OSSUAPrefix, OSSSDKVersion, systemName, systemVersion, localeIdentifier];
+        if (self.clientConfiguration.isAllowUACarrySystemInfo) {
+            NSString *systemName = [[[UIDevice currentDevice] systemName] stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+            NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+            userAgent = [NSString stringWithFormat:@"%@/%@(/%@/%@/%@)", OSSUAPrefix, OSSSDKVersion, systemName, systemVersion, localeIdentifier];
+        } else {
+            userAgent = [NSString stringWithFormat:@"%@/%@(/%@)", OSSUAPrefix, OSSSDKVersion, localeIdentifier];
+        }
 #elif TARGET_OS_OSX
         userAgent = [NSString stringWithFormat:@"%@/%@(/%@/%@/%@)", OSSUAPrefix, OSSSDKVersion, @"OSX", [NSProcessInfo processInfo].operatingSystemVersionString, localeIdentifier];
 #endif

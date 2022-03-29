@@ -14,7 +14,6 @@
 #import "OSSBolts.h"
 #import "OSSNetworking.h"
 #import "OSSXMLDictionary.h"
-#import "OSSReachabilityManager.h"
 #import "OSSIPv6Adapter.h"
 
 #import "OSSNetworkingRequestDelegate.h"
@@ -32,6 +31,7 @@ static NSString * const kClientRecordNameWithCommonPrefix = @"oss_partInfos_stor
 static NSString * const kClientRecordNameWithCRC64Suffix = @"-crc64";
 static NSString * const kClientRecordNameWithSequentialSuffix = @"-sequential";
 static NSUInteger const kClientMaximumOfChunks = 5000;   //max part number
+static NSUInteger const kPartSizeAlign = 4 * 1024;   // part size byte alignment
 
 static NSString * const kClientErrorMessageForEmptyFile = @"the length of file should not be 0!";
 static NSString * const kClientErrorMessageForCancelledTask = @"This task has been cancelled!";
@@ -77,8 +77,6 @@ static NSObject *lock;
         if (!lock) {
             lock = [NSObject new];
         }
-        // Monitor the network. If the network type is changed, recheck the IPv6 status.
-        [OSSReachabilityManager shareInstance];
 
         NSOperationQueue * queue = [NSOperationQueue new];
         // using for resumable upload and compat old interface
@@ -148,9 +146,12 @@ static NSObject *lock;
     }
 
     request.isHttpdnsEnable = self.clientConfiguration.isHttpdnsEnable;
-
+    request.isPathStyleAccessEnable = self.clientConfiguration.isPathStyleAccessEnable;
+    request.isCustomPathPrefixEnable = self.clientConfiguration.isCustomPathPrefixEnable;
+    
     return [_networking sendRequest:request];
 }
+
 
 #pragma implement restful apis
 
@@ -272,11 +273,17 @@ static NSObject *lock;
     
     if(partCount > kClientMaximumOfChunks)
     {
-        request.partSize = fileSize / kClientMaximumOfChunks;
-        partCount = kClientMaximumOfChunks;
+        NSUInteger partSize = fileSize / (kClientMaximumOfChunks - 1);
+        request.partSize = [self ceilPartSize:partSize];
+        partCount = (fileSize / request.partSize) + ((fileSize % request.partSize == 0) ? 0 : 1);
     }
     return partCount;
 #pragma clang diagnostic pop
+}
+
+- (NSUInteger)ceilPartSize:(NSUInteger)partSize {
+    partSize = (((partSize + (kPartSizeAlign - 1)) / kPartSizeAlign) * kPartSizeAlign);
+    return partSize;
 }
 
 - (unsigned long long)getSizeWithFilePath:(nonnull NSString *)filePath error:(NSError **)error
@@ -1596,8 +1603,14 @@ static NSObject *lock;
 #pragma clang diagnostic pop
             
                 NSDictionary *tPartInfo = [localPartInfos objectForKey: [@(remotePartNumber) stringValue]];
-                info.crc64 = [tPartInfo[@"crc64"] unsignedLongLongValue];
-                
+                if (request.crcFlag == OSSRequestCRCOpen) {
+                    if (tPartInfo == nil) {
+                        uploadedLength -= remotePartSize;
+                        return;
+                    }
+                    info.crc64 = [tPartInfo[@"crc64"] unsignedLongLongValue];
+                }
+
                 [uploadedPartInfos addObject:info];
                 [alreadyUploadIndex addObject:@(remotePartNumber)];
             }];
@@ -1913,18 +1926,43 @@ static NSObject *lock;
         NSString * accessKey = [(NSString *)[splitResult objectAtIndex:0] substringFromIndex:4];
         NSString * signature = [splitResult objectAtIndex:1];
         
+        BOOL isPathStyle = false;
         NSURL * endpointURL = [NSURL URLWithString:self.endpoint];
         NSString * host = endpointURL.host;
+        NSString * port = @"";
+        NSString * path = @"";
+        NSString * pathStylePath = @"";
         if ([OSSUtil isOssOriginBucketHost:host]) {
             host = [NSString stringWithFormat:@"%@.%@", bucketName, host];
+        } else if ([OSSUtil isIncludeCnameExcludeList:self.clientConfiguration.cnameExcludeList host:host]) {
+            if (self.clientConfiguration.isPathStyleAccessEnable) {
+                isPathStyle = true;
+            } else {
+                host = [NSString stringWithFormat:@"%@.%@", bucketName, host];
+            }
+        } else if ([[OSSIPv6Adapter getInstance] isIPv4Address:host] ||
+                   [[OSSIPv6Adapter getInstance] isIPv6Address:host]) {
+            isPathStyle = true;
+        }
+        if (endpointURL.port) {
+            port = [NSString stringWithFormat:@":%@", endpointURL.port];
+        }
+        if (self.clientConfiguration.isCustomPathPrefixEnable) {
+            path = endpointURL.path;
+        }
+        if (isPathStyle) {
+            pathStylePath = [@"/" stringByAppendingString:bucketName];
         }
         
         [params oss_setObject:signature forKey:@"Signature"];
         [params oss_setObject:accessKey forKey:@"OSSAccessKeyId"];
         [params oss_setObject:expires forKey:@"Expires"];
-        NSString * stringURL = [NSString stringWithFormat:@"%@://%@/%@?%@",
+        NSString * stringURL = [NSString stringWithFormat:@"%@://%@%@%@%@/%@?%@",
                                 endpointURL.scheme,
                                 host,
+                                port,
+                                path,
+                                pathStylePath,
                                 [OSSUtil encodeURL:objectKey],
                                 [OSSUtil populateQueryStringFromParameter:params]];
         return [OSSTask taskWithResult:stringURL];
@@ -1944,22 +1982,50 @@ static NSObject *lock;
                              withParameters:(NSDictionary *)parameters {
     
     return [[OSSTask taskWithResult:nil] continueWithBlock:^id(OSSTask *task) {
+        BOOL isPathStyle = false;
         NSURL * endpointURL = [NSURL URLWithString:self.endpoint];
         NSString * host = endpointURL.host;
+        NSString * port = @"";
+        NSString * path = @"";
+        NSString * pathStylePath = @"";
         if ([OSSUtil isOssOriginBucketHost:host]) {
             host = [NSString stringWithFormat:@"%@.%@", bucketName, host];
+        } else if ([OSSUtil isIncludeCnameExcludeList:self.clientConfiguration.cnameExcludeList host:host]) {
+            if (self.clientConfiguration.isPathStyleAccessEnable) {
+                isPathStyle = true;
+            } else {
+                host = [NSString stringWithFormat:@"%@.%@", bucketName, host];
+            }
+        } else if ([[OSSIPv6Adapter getInstance] isIPv4Address:host] ||
+                   [[OSSIPv6Adapter getInstance] isIPv6Address:host]) {
+            isPathStyle = true;
+        }
+        if (endpointURL.port) {
+            port = [NSString stringWithFormat:@":%@", endpointURL.port];
+        }
+        if (self.clientConfiguration.isCustomPathPrefixEnable) {
+            path = endpointURL.path;
+        }
+        if (isPathStyle) {
+            pathStylePath = [@"/" stringByAppendingString:bucketName];
         }
         if ([parameters count] > 0) {
-            NSString * stringURL = [NSString stringWithFormat:@"%@://%@/%@?%@",
+            NSString * stringURL = [NSString stringWithFormat:@"%@://%@%@%@%@/%@?%@",
                                     endpointURL.scheme,
                                     host,
+                                    port,
+                                    path,
+                                    pathStylePath,
                                     [OSSUtil encodeURL:objectKey],
                                     [OSSUtil populateQueryStringFromParameter:parameters]];
             return [OSSTask taskWithResult:stringURL];
         } else {
-            NSString * stringURL = [NSString stringWithFormat:@"%@://%@/%@",
+            NSString * stringURL = [NSString stringWithFormat:@"%@://%@%@%@%@/%@",
                                     endpointURL.scheme,
                                     host,
+                                    port,
+                                    path,
+                                    pathStylePath,
                                     [OSSUtil encodeURL:objectKey]];
             return [OSSTask taskWithResult:stringURL];
         }

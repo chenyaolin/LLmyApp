@@ -57,7 +57,7 @@ struct ServiceResult<T: Codable>: Codable {
     
 }
 
-extension ObservableType where E: Response {
+extension ObservableType where Element: Response {
     
     // 使用HandyJSON来转模型
     func mapModel <T: HandyJSON>(_ type: T.Type) -> Observable<T> {

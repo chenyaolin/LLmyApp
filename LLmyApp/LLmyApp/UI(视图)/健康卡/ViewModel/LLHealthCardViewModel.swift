@@ -8,12 +8,13 @@
 
 import UIKit
 import RxSwift
+import RxRelay
 
 class LLHealthCardViewModel: NSObject {
     
     let disposeBag = DisposeBag()
     private let service = LLHealthCardService()
-    var healthCards = Variable([CRHealthCard]())
+    var healthCards = BehaviorRelay(value: [CRHealthCard]())
     
     func loadData() {
         getECardNoInfo()
@@ -29,7 +30,8 @@ class LLHealthCardViewModel: NSObject {
             BQHudView.endActive()
             if let healthCards = value.content {
                 print("")
-                self?.healthCards.value = healthCards
+//                self?.healthCards.value = healthCards
+                self?.healthCards.accept(healthCards)
                 for healthCard in healthCards {
                     print("\(healthCard.name ?? "没有标题") : Codable")
                 }

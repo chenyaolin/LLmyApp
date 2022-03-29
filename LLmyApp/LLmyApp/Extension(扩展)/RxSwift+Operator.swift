@@ -22,7 +22,7 @@ func ~> <T>(left: Observable<T>, right: Binder<T>) -> Disposable {
     return left.bind(to: right)
 }
 
-func ~> <T>(left: Variable<T>, right: Binder<T>) -> Disposable {
+func ~> <T>(left: BehaviorRelay<T>, right: Binder<T>) -> Disposable {
     return left.asObservable().bind(to: right)
 }
 
@@ -30,10 +30,10 @@ func ~> <T>(left: Observable<T>, right: Binder<T?>) -> Disposable {
     return left.bind(to: right)
 }
 
-func ~> <T>(left: Variable<T>, right: Binder<T?>) -> Disposable {
+func ~> <T>(left: BehaviorRelay<T>, right: Binder<T?>) -> Disposable {
     return left.asObservable().bind(to: right)
 }
-func ~> <T>(left: Observable<T>, right: Variable<T>) -> Disposable {
+func ~> <T>(left: Observable<T>, right: BehaviorRelay<T>) -> Disposable {
     return left.asObservable().bind(to: right)
 }
 
@@ -46,12 +46,12 @@ func ~> <T>(left: Driver<T>, right: Binder<T?>) -> Disposable {
 
 /// 双向绑定操作符
 infix operator <~>: bind
-func <~> <T>(left: ControlProperty<T>, right: Variable<T>) -> (Disposable, Disposable) {
+func <~> <T>(left: ControlProperty<T>, right: BehaviorRelay<T>) -> (Disposable, Disposable) {
     let disposeable1 = right.asObservable().bind(to: left)
     let disposeable2 = left.bind(to: right)
     return (disposeable1, disposeable2)
 }
-func <~> <T>(left: Variable<T>, right: ControlProperty<T>) -> (Disposable, Disposable) {
+func <~> <T>(left: BehaviorRelay<T>, right: ControlProperty<T>) -> (Disposable, Disposable) {
     let disposeable2 = left.asObservable().bind(to: right)
     let disposeable1 = right.bind(to: left)
     return (disposeable1, disposeable2)
