@@ -1,2 +1,0 @@
-# BBRTC
-RTC DEMO
