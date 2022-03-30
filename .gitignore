@@ -31,7 +31,6 @@ DerivedData
 project.xcworkspace
 *.dSYM.zip
 *.dSYM
-*.generated.swift
 
 # BUCK
 buck-out/
