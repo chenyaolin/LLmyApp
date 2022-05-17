@@ -24,8 +24,10 @@ def shared_pods
     pod 'Charts'
     pod 'AXKit'
 #    pod 'MWPhotoBrowser' #图片浏览器
+#    pod 'MBProgressHUD'
 #    pod 'FWPopupView'
     pod 'AliyunOSSiOS'
+    pod 'AuroraIMUI'
 end
 
 target 'LLmyApp' do

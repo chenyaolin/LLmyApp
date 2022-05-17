@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = LLDBManager.default
         let documentPath2 = NSHomeDirectory() + "/Documents"
         print("\(documentPath2)")
+              
+        LLIPHelper.getIPaddress()
         
         return true
     }

@@ -44,3 +44,9 @@ class LLHealthCardViewModel: NSObject {
     }
 
 }
+
+extension Reactive where Base: UIViewController {
+    
+    
+    
+}

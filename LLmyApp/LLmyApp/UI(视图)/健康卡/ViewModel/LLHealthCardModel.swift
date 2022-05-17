@@ -36,3 +36,4 @@ enum CRHealthCardState: String, Modelable, Codable {
     // 已激活
     case activated = "1"
 }
+

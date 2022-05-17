@@ -42,7 +42,8 @@ class LLMainViewController: UIViewController {
 //            let vc = LLChartsViewController()
 //            let vc = LLCoreDataViewController()
 //            let vc = LLVideoPlayViewController()
-            let vc = VideoPlayViewController()
+//            let vc = VideoPlayViewController()
+            let vc = LLTestIMViewController()
             vc.hidesBottomBarWhenPushed = true
             self?.navigationController?.pushViewController(vc, animated: true)
             

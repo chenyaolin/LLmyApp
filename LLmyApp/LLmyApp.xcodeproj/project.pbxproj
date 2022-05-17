@@ -100,6 +100,10 @@
 		8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */; };
 		8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */; };
 		8CF07BBE25BFF53800CBC3BB /* CRTipPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */; };
+		9717863927FD6D0900AAD72E /* LLTestIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717863727FD6D0900AAD72E /* LLTestIMViewController.swift */; };
+		9717863A27FD6D0900AAD72E /* LLTestIMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9717863827FD6D0900AAD72E /* LLTestIMViewController.xib */; };
+		9717863D27FD8AAF00AAD72E /* MyMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */; };
+		9782E5F0283222E700B0CEFE /* LLIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782E5EF283222E700B0CEFE /* LLIPHelper.m */; };
 		9B30182A48EAF51A82096190 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -219,6 +223,11 @@
 		8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualSpaceFlowLayout.m; sourceTree = "<group>"; };
 		8CF07BBB25BFF53800CBC3BB /* CRTipPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRTipPopUpView.swift; sourceTree = "<group>"; };
 		8CF07BBC25BFF53800CBC3BB /* CRTipPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRTipPopUpView.xib; sourceTree = "<group>"; };
+		9717863727FD6D0900AAD72E /* LLTestIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTestIMViewController.swift; sourceTree = "<group>"; };
+		9717863827FD6D0900AAD72E /* LLTestIMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLTestIMViewController.xib; sourceTree = "<group>"; };
+		9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageModel.swift; sourceTree = "<group>"; };
+		9782E5EE283222E700B0CEFE /* LLIPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLIPHelper.h; sourceTree = "<group>"; };
+		9782E5EF283222E700B0CEFE /* LLIPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLIPHelper.m; sourceTree = "<group>"; };
 		DC6D3843F418405E2E08BDF9 /* Pods-LLmyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DE731DC4AD363D5A31E16675 /* Pods-LLmyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLmyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLmyApp/Pods-LLmyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EF071408B73C73C83B8A5146 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -413,6 +422,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				9717863527FD6BED00AAD72E /* jphshIM(极光聊天模块) */,
 				875A69FD2759F5DD00BFD2C4 /* BookPlay(书戏英语) */,
 				876FB97C27587F610037DB50 /* PopoverDemo(demo) */,
 				87EF0E902743B02100A14AC3 /* ScrollviewDemo(demo) */,
@@ -626,6 +636,8 @@
 				8CA2A93F25B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift */,
 				8CD963CD25F07A6E00B65E7E /* EqualSpaceFlowLayout.h */,
 				8CD963CE25F07A6E00B65E7E /* EqualSpaceFlowLayout.m */,
+				9782E5EE283222E700B0CEFE /* LLIPHelper.h */,
+				9782E5EF283222E700B0CEFE /* LLIPHelper.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -683,6 +695,32 @@
 				8C7841FC25C00FBB00697A0A /* LLPopView.swift */,
 			);
 			path = PopView;
+			sourceTree = "<group>";
+		};
+		9717863527FD6BED00AAD72E /* jphshIM(极光聊天模块) */ = {
+			isa = PBXGroup;
+			children = (
+				9717863B27FD8A9A00AAD72E /* viewModel */,
+				9717863627FD6C6700AAD72E /* view */,
+			);
+			path = "jphshIM(极光聊天模块)";
+			sourceTree = "<group>";
+		};
+		9717863627FD6C6700AAD72E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9717863727FD6D0900AAD72E /* LLTestIMViewController.swift */,
+				9717863827FD6D0900AAD72E /* LLTestIMViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9717863B27FD8A9A00AAD72E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
@@ -789,6 +827,7 @@
 				87193EE4272121290020D002 /* 老照片.mp4 in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
 				8742810B27449F5E005A458E /* LLScrollViewDemoCell.xib in Resources */,
+				9717863A27FD6D0900AAD72E /* LLTestIMViewController.xib in Resources */,
 				87DF0B09219C15BD00D479B0 /* LLHealthCardViewController.xib in Resources */,
 				8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
@@ -868,6 +907,9 @@
 				87AB304B271FCDF60063DC9B /* LLOssHelper.swift in Sources */,
 				87DFF4A52195257500EB5438 /* MoyaRequestProtocol.swift in Sources */,
 				8C95475D254AB99600EF77C4 /* Fish+CoreDataProperties copy.swift in Sources */,
+				9782E5F0283222E700B0CEFE /* LLIPHelper.m in Sources */,
+				9717863927FD6D0900AAD72E /* LLTestIMViewController.swift in Sources */,
+				9717863D27FD8AAF00AAD72E /* MyMessageModel.swift in Sources */,
 				87193EE027211F030020D002 /* LLVideoPlayViewController.swift in Sources */,
 				87AB31022194195700B330EA /* NibLoadableProtocol.swift in Sources */,
 				8C90ECB8254BEBAA000670F4 /* LLFish+.swift in Sources */,
@@ -1096,6 +1138,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
