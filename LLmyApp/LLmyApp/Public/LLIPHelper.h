@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)getNetworkIPAddress;
 + (void)getIPaddress;
++ (void)awakeFromYNGroupClassLiveHeaderViewWithDate;
 
 @end
 

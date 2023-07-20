@@ -47,4 +47,21 @@ temp_address = temp_address->ifa_next;
 NSLog(@"获取到的IP地址为：%@",address);
 }
 
++ (void)awakeFromYNGroupClassLiveHeaderViewWithDate {
+//    self.selectedDate = date;
+    
+    NSTimeInterval secondsPerDay = 24 * 60 * 60;
+    //明天时间
+    NSDate *tomorrow = [[NSDate alloc] initWithTimeIntervalSinceNow:secondsPerDay];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd"];
+    NSString *dateStr = [dateFormatter stringFromDate:tomorrow];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:dateStr, @"dayStr", tomorrow, @"date", nil];
+    NSLog(@"%@",dict);
+//    self.currentModel = [YNGroupClassLiveWeekDateModel modelWithDict:dict];
+//    [self.collectionView reloadData];
+//    [self setButton];
+}
+
 @end

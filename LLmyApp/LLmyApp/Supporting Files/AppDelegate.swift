@@ -24,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let documentPath2 = NSHomeDirectory() + "/Documents"
         print("\(documentPath2)")
               
-        LLIPHelper.getIPaddress()
+//        LLIPHelper.getIPaddress()
+        
+        LLIPHelper.awakeFromYNGroupClassLiveHeaderViewWithDate()
         
         return true
     }

@@ -10,6 +10,8 @@ import UIKit
 
 class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
     
+    var lineCount: Int = 0
+    
     var itemAttributes = [UICollectionViewLayoutAttributes]()
     
     init(minInteritem: CGFloat, minLine: CGFloat, edgeInsets: UIEdgeInsets) {
@@ -84,6 +86,8 @@ class LLEqualSpaceFlowLayout: UICollectionViewFlowLayout {
                     height = attribute.frame.size.height
                 }
             }
+            
+            self.lineCount = ySet.count
             
             let newSize = CGSize(width: size.width, height: (height * CGFloat(ySet.count)) + (minimumLineSpacing * CGFloat((ySet.count - 1))) + sectionInset.top + sectionInset.bottom)
             
