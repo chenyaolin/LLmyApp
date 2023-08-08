@@ -105,6 +105,22 @@
 		9717863D27FD8AAF00AAD72E /* MyMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */; };
 		9753717A29B72BA500832505 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B671F900C9F8B5FC4459FE64 /* Pods_LLmyApp.framework */; };
 		9782E5F0283222E700B0CEFE /* LLIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782E5EF283222E700B0CEFE /* LLIPHelper.m */; };
+		97D1A1992A7CD3C700CC19D9 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97D1A1972A7CD3C700CC19D9 /* AlipaySDK.bundle */; };
+		97D1A19A2A7CD3C700CC19D9 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1982A7CD3C700CC19D9 /* AlipaySDK.framework */; };
+		97D1A19B2A7CD74E00CC19D9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0EE3225BACF6500599EBC /* libz.tbd */; };
+		97D1A19D2A7CD77300CC19D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A19C2A7CD77300CC19D9 /* SystemConfiguration.framework */; };
+		97D1A19F2A7CD7A400CC19D9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A19E2A7CD7A400CC19D9 /* CoreTelephony.framework */; };
+		97D1A1A12A7CD7AF00CC19D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1A02A7CD7AF00CC19D9 /* QuartzCore.framework */; };
+		97D1A1A32A7CD7BD00CC19D9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1A22A7CD7BD00CC19D9 /* CoreText.framework */; };
+		97D1A1A52A7CD7CC00CC19D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1A42A7CD7CC00CC19D9 /* CoreGraphics.framework */; };
+		97D1A1A72A7CD7D400CC19D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1A62A7CD7D400CC19D9 /* UIKit.framework */; };
+		97D1A1A92A7CD7E800CC19D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1A82A7CD7E800CC19D9 /* Foundation.framework */; };
+		97D1A1AB2A7CD7EF00CC19D9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1AA2A7CD7EF00CC19D9 /* CFNetwork.framework */; };
+		97D1A1AD2A7CD7FE00CC19D9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A1AC2A7CD7FE00CC19D9 /* CoreMotion.framework */; };
+		97D1A1B62A7CD8AD00CC19D9 /* LLAliPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D1A1B42A7CD8AD00CC19D9 /* LLAliPayViewController.m */; };
+		97D1A1B72A7CD8AD00CC19D9 /* LLAliPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D1A1B52A7CD8AD00CC19D9 /* LLAliPayViewController.xib */; };
+		97DD1D652A82296B00FF919A /* LLWebRtcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */; };
+		97DD1D692A822E6F00FF919A /* LLAesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD1D682A822E6F00FF919A /* LLAesHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +246,22 @@
 		9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageModel.swift; sourceTree = "<group>"; };
 		9782E5EE283222E700B0CEFE /* LLIPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLIPHelper.h; sourceTree = "<group>"; };
 		9782E5EF283222E700B0CEFE /* LLIPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLIPHelper.m; sourceTree = "<group>"; };
+		97D1A1972A7CD3C700CC19D9 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		97D1A1982A7CD3C700CC19D9 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		97D1A19C2A7CD77300CC19D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		97D1A19E2A7CD7A400CC19D9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		97D1A1A02A7CD7AF00CC19D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		97D1A1A22A7CD7BD00CC19D9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		97D1A1A42A7CD7CC00CC19D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97D1A1A62A7CD7D400CC19D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		97D1A1A82A7CD7E800CC19D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97D1A1AA2A7CD7EF00CC19D9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		97D1A1AC2A7CD7FE00CC19D9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		97D1A1B32A7CD8AD00CC19D9 /* LLAliPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAliPayViewController.h; sourceTree = "<group>"; };
+		97D1A1B42A7CD8AD00CC19D9 /* LLAliPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAliPayViewController.m; sourceTree = "<group>"; };
+		97D1A1B52A7CD8AD00CC19D9 /* LLAliPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLAliPayViewController.xib; sourceTree = "<group>"; };
+		97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLWebRtcViewController.swift; sourceTree = "<group>"; };
+		97DD1D682A822E6F00FF919A /* LLAesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAesHelper.swift; sourceTree = "<group>"; };
 		B671F900C9F8B5FC4459FE64 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -238,9 +270,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D1A1AD2A7CD7FE00CC19D9 /* CoreMotion.framework in Frameworks */,
+				97D1A1AB2A7CD7EF00CC19D9 /* CFNetwork.framework in Frameworks */,
+				97D1A1A92A7CD7E800CC19D9 /* Foundation.framework in Frameworks */,
+				97D1A1A72A7CD7D400CC19D9 /* UIKit.framework in Frameworks */,
+				97D1A1A52A7CD7CC00CC19D9 /* CoreGraphics.framework in Frameworks */,
+				97D1A1A32A7CD7BD00CC19D9 /* CoreText.framework in Frameworks */,
+				97D1A1A12A7CD7AF00CC19D9 /* QuartzCore.framework in Frameworks */,
+				97D1A19F2A7CD7A400CC19D9 /* CoreTelephony.framework in Frameworks */,
+				97D1A19D2A7CD77300CC19D9 /* SystemConfiguration.framework in Frameworks */,
 				8CD0EE5225BAD03D00599EBC /* libc++.tbd in Frameworks */,
+				97D1A19A2A7CD3C700CC19D9 /* AlipaySDK.framework in Frameworks */,
 				9753717A29B72BA500832505 /* Pods_LLmyApp.framework in Frameworks */,
 				8CD0EE1F25BACEB200599EBC /* libWeChatSDK.a in Frameworks */,
+				97D1A19B2A7CD74E00CC19D9 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +317,7 @@
 				87168642219951220019968E /* GatewayHelper.swift */,
 				8716864421995D800019968E /* RandomString.swift */,
 				8C5ABC9325B9199900763628 /* LLUtils.swift */,
+				97DD1D682A822E6F00FF919A /* LLAesHelper.swift */,
 			);
 			path = "Utils(工具类)";
 			sourceTree = "<group>";
@@ -379,6 +423,7 @@
 		87AB30DA21940BD000B330EA /* LLmyApp */ = {
 			isa = PBXGroup;
 			children = (
+				97D1A1962A7CD3C700CC19D9 /* AlipaySDK */,
 				8CA2A93E25B81F4600FE0615 /* Public */,
 				8748487E2394E1500041F3CB /* Resources */,
 				87168632219917D80019968E /* Utils(工具类) */,
@@ -413,6 +458,7 @@
 		87AB30FC2194181400B330EA /* UI(视图) */ = {
 			isa = PBXGroup;
 			children = (
+				97DD1D632A82293000FF919A /* LLWebRtc */,
 				9717863527FD6BED00AAD72E /* jphshIM(极光聊天模块) */,
 				875A69FD2759F5DD00BFD2C4 /* BookPlay(书戏英语) */,
 				876FB97C27587F610037DB50 /* PopoverDemo(demo) */,
@@ -714,6 +760,26 @@
 			path = viewModel;
 			sourceTree = "<group>";
 		};
+		97D1A1962A7CD3C700CC19D9 /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				97D1A1972A7CD3C700CC19D9 /* AlipaySDK.bundle */,
+				97D1A1982A7CD3C700CC19D9 /* AlipaySDK.framework */,
+				97D1A1B32A7CD8AD00CC19D9 /* LLAliPayViewController.h */,
+				97D1A1B42A7CD8AD00CC19D9 /* LLAliPayViewController.m */,
+				97D1A1B52A7CD8AD00CC19D9 /* LLAliPayViewController.xib */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+		97DD1D632A82293000FF919A /* LLWebRtc */ = {
+			isa = PBXGroup;
+			children = (
+				97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */,
+			);
+			path = LLWebRtc;
+			sourceTree = "<group>";
+		};
 		EF0FC975987C19C2223C664F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,6 +792,15 @@
 		F3CC11BF8B800F17C7268C62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97D1A1AC2A7CD7FE00CC19D9 /* CoreMotion.framework */,
+				97D1A1AA2A7CD7EF00CC19D9 /* CFNetwork.framework */,
+				97D1A1A82A7CD7E800CC19D9 /* Foundation.framework */,
+				97D1A1A62A7CD7D400CC19D9 /* UIKit.framework */,
+				97D1A1A42A7CD7CC00CC19D9 /* CoreGraphics.framework */,
+				97D1A1A22A7CD7BD00CC19D9 /* CoreText.framework */,
+				97D1A1A02A7CD7AF00CC19D9 /* QuartzCore.framework */,
+				97D1A19E2A7CD7A400CC19D9 /* CoreTelephony.framework */,
+				97D1A19C2A7CD77300CC19D9 /* SystemConfiguration.framework */,
 				8CD0EE3225BACF6500599EBC /* libz.tbd */,
 				8CD0EE2E25BACF4300599EBC /* libc++.tbd */,
 				B671F900C9F8B5FC4459FE64 /* Pods_LLmyApp.framework */,
@@ -825,6 +900,7 @@
 				87DF0B18219C206B00D479B0 /* LLHealthCardCell.xib in Resources */,
 				87AB310621941A5B00B330EA /* LLCustomTabBar.xib in Resources */,
 				87193EE4272121290020D002 /* 老照片.mp4 in Resources */,
+				97D1A1992A7CD3C700CC19D9 /* AlipaySDK.bundle in Resources */,
 				871686412199264E0019968E /* 加载.gif in Resources */,
 				8742810B27449F5E005A458E /* LLScrollViewDemoCell.xib in Resources */,
 				9717863A27FD6D0900AAD72E /* LLTestIMViewController.xib in Resources */,
@@ -834,6 +910,7 @@
 				8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */,
 				8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */,
 				87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */,
+				97D1A1B72A7CD8AD00CC19D9 /* LLAliPayViewController.xib in Resources */,
 				87AB30E321940BD100B330EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -931,6 +1008,7 @@
 				8716863F219919600019968E /* UIViewExtension.swift in Sources */,
 				8C5ABCA425B978CF00763628 /* DateExtension.swift in Sources */,
 				8C4EA36B25CD2E0F0047D286 /* LLPickerView.swift in Sources */,
+				97D1A1B62A7CD8AD00CC19D9 /* LLAliPayViewController.m in Sources */,
 				8CF07BBD25BFF53800CBC3BB /* CRTipPopUpView.swift in Sources */,
 				87AB3112219441D000B330EA /* LLMainViewController.swift in Sources */,
 				87DF0B1F219C231100D479B0 /* LLHealthCardApi.swift in Sources */,
@@ -943,6 +1021,7 @@
 				87AB310E21941CCA00B330EA /* BaseNavigationController.swift in Sources */,
 				8C954761254ABB7F00EF77C4 /* LLDBManager.swift in Sources */,
 				87AB3104219419BE00B330EA /* UIColor+Hex.swift in Sources */,
+				97DD1D652A82296B00FF919A /* LLWebRtcViewController.swift in Sources */,
 				8CD2039D25F605490088497C /* ZoomingScrollView.m in Sources */,
 				8C90ECB4254BEB08000670F4 /* LLBaseOnCoreData.swift in Sources */,
 				87DF0B08219C15BD00D479B0 /* LLHealthCardViewController.swift in Sources */,
@@ -977,6 +1056,7 @@
 				8CD6A3E3254976D7005D76A9 /* LLDBViewController.swift in Sources */,
 				87DFF4AC2195630000EB5438 /* ServiceError.swift in Sources */,
 				87DFF4AE21956D6900EB5438 /* Provider.swift in Sources */,
+				97DD1D692A822E6F00FF919A /* LLAesHelper.swift in Sources */,
 				8CD0EE0025BABF5500599EBC /* LLPayUtils.swift in Sources */,
 				87DF0B0C219C16B700D479B0 /* LLHealthCardViewModel.swift in Sources */,
 				8C5ABC8625B90A9C00763628 /* LLEqualSpaceCollectionVc.swift in Sources */,
@@ -1145,6 +1225,11 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLmyApp/AlipaySDK",
+				);
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1177,6 +1262,10 @@
 				DEVELOPMENT_TEAM = 59GUGKA6UT;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LLmyApp/AlipaySDK",
+				);
 				INFOPLIST_FILE = "LLmyApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

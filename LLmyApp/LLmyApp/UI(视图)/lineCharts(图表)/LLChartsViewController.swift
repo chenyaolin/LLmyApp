@@ -35,7 +35,7 @@ class LLChartsViewController: UIViewController {
         }
         
         lineChartView.delegate = self
-        lineChartView.chartDescription?.enabled = false
+        lineChartView.chartDescription.enabled = false
         lineChartView.legend.enabled = false // 不显示图例描述
         
         let xAxis = lineChartView.xAxis
@@ -154,12 +154,16 @@ extension LLChartsViewController: ChartViewDelegate {
     
 }
 
-/// 自定义x轴的显示
-class CustomValueFormatter: NSObject, IAxisValueFormatter {
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return "2.1"
-    }
-}
+/// 自定义x轴的显示 111111 todos
+//class CustomValueFormatter: NSObject, IAxisValueFormatter {
+//    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+//        return "2.1"
+//    }
+//    
+//    func stringFormat() {
+//        
+//    }
+//}
 
 class YourMarkerView: MarkerView {
     var textLayer: CATextLayer = {

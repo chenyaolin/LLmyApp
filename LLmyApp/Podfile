@@ -28,6 +28,8 @@ def shared_pods
 #    pod 'FWPopupView'
     pod 'AliyunOSSiOS'
     pod 'AuroraIMUI'
+    
+    pod 'CryptoSwift'
 end
 
 target 'LLmyApp' do

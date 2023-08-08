@@ -7,3 +7,4 @@
 #import "EqualSpaceFlowLayout.h"
 #import "ImageBrowserView.h"
 #import "LLIPHelper.h"
+#import "LLAliPayViewController.h"
