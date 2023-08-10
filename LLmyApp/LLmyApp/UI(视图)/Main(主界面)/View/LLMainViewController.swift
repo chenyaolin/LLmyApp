@@ -16,54 +16,59 @@ class LLMainViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     let viewModel = LLMainViewModel()
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var secondBtn: UIButton!
     
-    lazy var loadingView: UIView = {
-        let view = UIView(frame: kMainBounds)
-        view.backgroundColor = UIColor.clear
-        let progressView = CRHUDProgressView()
-        progressView.center = CGPoint(x: kAppWidth/2, y: self.navigationController == nil ? kAppHeight/2:kAppHeight/2-64)
-        view.addSubview(progressView)
-        view.isHidden = true
-        return view
+    private let datas: [MainItem] = MainItem.allValues
+    
+    private lazy var collection: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
+        layout.itemSize = CGSize(width: (kAppWidth - 24 - 10) / 2 - 0.1, height: 44)
+        let v = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        v.register(LLMainCollectionViewCell.self)
+        v.dataSource = self
+        v.delegate = self
+        return v
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.addSubview(loadingView)
         viewModel.loadData()
         
-        button.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
-//            self?.viewModel.getAdvertisement()
-//            let vc = LLHealthCardViewController()
-//            let vc = LLEqualSpaceCollectionVc()
-//            let vc = LLChartsViewController()
-//            let vc = LLCoreDataViewController()
-//            let vc = LLVideoPlayViewController()
-//            let vc = VideoPlayViewController()
-            let vc = LLTestIMViewController()
-            vc.hidesBottomBarWhenPushed = true
-            self?.navigationController?.pushViewController(vc, animated: true)
-            
-            }.disposed(by: disposeBag)
+        self.view.addSubview(collection)
+        collection.snp.makeConstraints {
+            $0.top.equalTo(100)
+            $0.bottom.equalToSuperview().inset(100)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo((kAppWidth - 24))
+        }
         
-//        #if DEBUG
-//        print("测试")
-//        #else
-//        print("生产")
-//        #endif
+        let btn = UIButton()
+        btn.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
         
-        secondBtn.rx.controlEvent(.touchUpInside).subscribe { [weak self] (event) in
-//            let vc = LLScrollViewController()
-//            let vc = LLPopoVerViewController()
-            let vc = LLWebRtcViewController()
-            vc.hidesBottomBarWhenPushed = true
-            self?.navigationController?.pushViewController(vc, animated: true)
-            
-            }.disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
         
+    }
+    
+}
+
+extension LLMainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.datas.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(LLMainCollectionViewCell.self, indexPath: indexPath)
+        cell.setDatas(model: datas[indexPath.item])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = datas[indexPath.item].vc
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

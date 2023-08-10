@@ -103,6 +103,7 @@
 		9717863927FD6D0900AAD72E /* LLTestIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717863727FD6D0900AAD72E /* LLTestIMViewController.swift */; };
 		9717863A27FD6D0900AAD72E /* LLTestIMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9717863827FD6D0900AAD72E /* LLTestIMViewController.xib */; };
 		9717863D27FD8AAF00AAD72E /* MyMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */; };
+		9717B0B22A84B55100293E32 /* LLMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B0B12A84B55100293E32 /* LLMainCollectionViewCell.swift */; };
 		9753717A29B72BA500832505 /* Pods_LLmyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B671F900C9F8B5FC4459FE64 /* Pods_LLmyApp.framework */; };
 		9782E5F0283222E700B0CEFE /* LLIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9782E5EF283222E700B0CEFE /* LLIPHelper.m */; };
 		97D1A1992A7CD3C700CC19D9 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97D1A1972A7CD3C700CC19D9 /* AlipaySDK.bundle */; };
@@ -246,6 +247,7 @@
 		9717863727FD6D0900AAD72E /* LLTestIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTestIMViewController.swift; sourceTree = "<group>"; };
 		9717863827FD6D0900AAD72E /* LLTestIMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLTestIMViewController.xib; sourceTree = "<group>"; };
 		9717863C27FD8AAF00AAD72E /* MyMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageModel.swift; sourceTree = "<group>"; };
+		9717B0B12A84B55100293E32 /* LLMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		9782E5EE283222E700B0CEFE /* LLIPHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLIPHelper.h; sourceTree = "<group>"; };
 		9782E5EF283222E700B0CEFE /* LLIPHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLIPHelper.m; sourceTree = "<group>"; };
 		97D1A1972A7CD3C700CC19D9 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 			children = (
 				87AB3111219441D000B330EA /* LLMainViewController.swift */,
 				87AB3113219441DF00B330EA /* LLMainUI.storyboard */,
+				9717B0B12A84B55100293E32 /* LLMainCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1007,6 +1010,7 @@
 				87168631219917B60019968E /* ProgressPluginIn.swift in Sources */,
 				87168635219918090019968E /* HUD.swift in Sources */,
 				8CD963CF25F07A6F00B65E7E /* EqualSpaceFlowLayout.m in Sources */,
+				9717B0B22A84B55100293E32 /* LLMainCollectionViewCell.swift in Sources */,
 				87193EE82721220E0020D002 /* VideoPlayViewController.swift in Sources */,
 				87DFF4AA2195618B00EB5438 /* ServiceResult.swift in Sources */,
 				8716864521995D800019968E /* RandomString.swift in Sources */,
