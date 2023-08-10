@@ -121,6 +121,8 @@
 		97D1A1B72A7CD8AD00CC19D9 /* LLAliPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D1A1B52A7CD8AD00CC19D9 /* LLAliPayViewController.xib */; };
 		97DD1D652A82296B00FF919A /* LLWebRtcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */; };
 		97DD1D692A822E6F00FF919A /* LLAesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD1D682A822E6F00FF919A /* LLAesHelper.swift */; };
+		97FEF2112A8373E7008B7FC8 /* LLrtcVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FEF20F2A8373E7008B7FC8 /* LLrtcVideoViewController.swift */; };
+		97FEF2122A8373E7008B7FC8 /* LLrtcVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FEF2102A8373E7008B7FC8 /* LLrtcVideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,6 +264,8 @@
 		97D1A1B52A7CD8AD00CC19D9 /* LLAliPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLAliPayViewController.xib; sourceTree = "<group>"; };
 		97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLWebRtcViewController.swift; sourceTree = "<group>"; };
 		97DD1D682A822E6F00FF919A /* LLAesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAesHelper.swift; sourceTree = "<group>"; };
+		97FEF20F2A8373E7008B7FC8 /* LLrtcVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLrtcVideoViewController.swift; sourceTree = "<group>"; };
+		97FEF2102A8373E7008B7FC8 /* LLrtcVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLrtcVideoViewController.xib; sourceTree = "<group>"; };
 		B671F900C9F8B5FC4459FE64 /* Pods_LLmyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLmyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -776,6 +780,8 @@
 			isa = PBXGroup;
 			children = (
 				97DD1D642A82296B00FF919A /* LLWebRtcViewController.swift */,
+				97FEF20F2A8373E7008B7FC8 /* LLrtcVideoViewController.swift */,
+				97FEF2102A8373E7008B7FC8 /* LLrtcVideoViewController.xib */,
 			);
 			path = LLWebRtc;
 			sourceTree = "<group>";
@@ -908,6 +914,7 @@
 				8C4EA36F25CD2E1E0047D286 /* LLPickerView.xib in Resources */,
 				87AB3114219441DF00B330EA /* LLMainUI.storyboard in Resources */,
 				8C5ABCA025B9783000763628 /* LLDatePickerView.xib in Resources */,
+				97FEF2122A8373E7008B7FC8 /* LLrtcVideoViewController.xib in Resources */,
 				8C5ABC8E25B914B800763628 /* LLEqualSpaceData.json in Resources */,
 				87AB30E621940BD100B330EA /* LaunchScreen.storyboard in Resources */,
 				97D1A1B72A7CD8AD00CC19D9 /* LLAliPayViewController.xib in Resources */,
@@ -1040,6 +1047,7 @@
 				87EF0E922743B09800A14AC3 /* LLScrollViewController.swift in Sources */,
 				8716863B219918390019968E /* CRHUDLabelView.swift in Sources */,
 				87DFF4B32195933300EB5438 /* LLMainViewModel.swift in Sources */,
+				97FEF2112A8373E7008B7FC8 /* LLrtcVideoViewController.swift in Sources */,
 				8CA2A94025B8228E00FE0615 /* LLEqualSpaceFlowLayout.swift in Sources */,
 				8733C02127117A0500FED3E4 /* LLAlerSheetView.swift in Sources */,
 				8C95475C254AB99600EF77C4 /* Fish+CoreDataClass copy.swift in Sources */,
